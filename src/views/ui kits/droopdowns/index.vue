@@ -1,6 +1,6 @@
 <template>
   <div>
-    page sale
+    page of droopdowns
   </div>
 </template>
 
