@@ -1,6 +1,6 @@
 <template>
   <div>
-    page sale
+    page alerts
   </div>
 </template>
 
@@ -10,6 +10,6 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 </style>
