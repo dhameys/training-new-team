@@ -4,7 +4,7 @@
             <p class="text-sm font-bold">color</p>
         </label>
 
-        <div class="bg-white min-w-full grid grid-cols-6 p-16">
+        <div class="bg-white min-w-full grid grid-cols-6 p-0">
             <label
                 ><div type="button" class="text-white bg-blue-700 focus:ring-4 rounded lg focus:ring-blue-300 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none w-36 h-20"></div>
                 <h1 class="ml-6 text-xl">Primary</h1></label
@@ -54,7 +54,7 @@
     <br />
 
     <!-- ======onother two==== -->
-    <div class="flex gap-4">
+    <div class="flex gap-2">
         <div class="bg-white border w-1/2 p-12 border-gray-200 rounded-sm shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
             <h6 class="text-2xl">Text color</h6>
 

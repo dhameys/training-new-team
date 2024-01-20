@@ -1,6 +1,6 @@
 <template>
   <div>
-    page of droopdowns
+  
   </div>
 </template>
 

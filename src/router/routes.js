@@ -1,9 +1,16 @@
 const Layout = () => import('@/layouts/Index.vue')
 const Dashboard = () => import('@/views/dashboard/Index.vue');
-const Default = () => import('@/views/dashboard/default/Index.vue')
-const Darkmenu = () => import('@/views/dashboard/dark menu/Index.vue')
-const Invoice = () => import('@/views/invoice/Index.vue')
+const Default = () => import('@/views/dashboard/default/Index.vue');
+const Darkmenu = () => import('@/views/dashboard/dark menu/Index.vue');
+
+// forms ===============================================================================
+const Basicelements = () => import('@/views/forms/basic elements/Index.vue');
+const Groups = () => import('@/views/forms/Groups/Index.vue');
+const Maxlength = () => import('@/views/forms/max length/Index.vue');
+const Invoice = () => import('@/views/invoice/Index.vue');
 const Board = () => import('@/views/Board/Index.vue')
+
+// ui kits==============================================================================
 const Colors = () => import('@/views/ui kits/colors/Index.vue')
 const alerts = () => import('@/views/ui kits/alerts/Index.vue')
 const Buttons = () => import('@/views/ui kits/buttons/Index.vue')
@@ -36,6 +43,33 @@ export default [
                 name: 'app.dark-menu',
                 component: Darkmenu
             },
+
+            // =====================Forms
+
+            {
+                path: '/forms/basic-elements',
+                name: 'app.basic-elements',
+                component: Basicelements
+            },
+            
+            // =============== GROUPS
+
+            {
+                path: '/forms/groups',
+                name: 'app.groups',
+                component: Groups
+            },
+
+            // ===================Max length
+
+            {
+                path: '/forms/max-length',
+                name: 'app.max-length',
+                component: Maxlength
+            },
+
+
+            // ========= invoice  
             {
                 path: '/invoice',
                 name: 'app.invoice',
