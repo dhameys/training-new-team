@@ -1,6 +1,6 @@
 <template>
   <div>
-    bage default
+    page Typography
   </div>
 </template>
 
@@ -10,6 +10,6 @@ export default {
 }
 </script>
 
-<style lang="less" scoped>
+<style>
 
 </style>

@@ -1,7 +1,5 @@
 <template>
-  <div>
-    bage default
-  </div>
+  <div>bage modal</div>
 </template>
 
 <script>
@@ -13,3 +11,4 @@ export default {
 <style lang="less" scoped>
 
 </style>
+

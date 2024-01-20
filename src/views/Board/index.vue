@@ -1,7 +1,5 @@
 <template>
-  <div>
-    bage default
-  </div>
+  <div>waa pageka board</div>
 </template>
 
 <script>
@@ -10,6 +8,6 @@ export default {
 }
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 
 </style>

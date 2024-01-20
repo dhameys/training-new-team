@@ -1,15 +1,15 @@
 <template>
-    <div>
-wey nakaaa hadba weyna kaa
-    </div>
+  <div>
+    page sale
+  </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+
+}
 </script>
 
-<style lang="scss" scoped>
+<style>
 
 </style>

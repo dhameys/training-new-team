@@ -1,6 +1,6 @@
 <template>
   <div>
-    bage default
+    page loading
   </div>
 </template>
 
@@ -10,6 +10,6 @@ export default {
 }
 </script>
 
-<style lang="less" scoped>
+<style>
 
 </style>

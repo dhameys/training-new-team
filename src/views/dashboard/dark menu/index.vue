@@ -1,15 +1,15 @@
 <template>
-    <div>
-dark menu
-    </div>
+  <div>
+    page dark menu
+  </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+
+}
 </script>
 
-<style lang="scss" scoped>
+<style>
 
 </style>
