@@ -29,26 +29,10 @@
                                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                                 <polyline points="9 22 9 12 15 12 15 22"></polyline>
                             </svg>
-
-                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone" :class="{ 'dark:text-dark-primary text-primary ': list === 'dashboard', 'md:!block': isSidebar }">Dashboard</span>
+                             Dashboard
                         </div>
-                        <div>
-                            <span>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
-                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'dashboard' }"
-                                >
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                                </svg>
-                            </span>
-                        </div>
+                       
                     </button>
-                    <!-- Dropdown menu -->
 
                     <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
                         <div v-if="list === 'dashboard'" id="dropdown" class="z-10 w-full">
@@ -130,7 +114,6 @@
                     <!-- ================================================reports================================== -->
                 </li>
 
-         
                 <!-- ===============================================invoice==================== -->
                 <li @click="active">
                     <router-link :to="{ name: 'app.invoice' }" @click="openList('invoices')" class="router-links transition flex items-center p-2 rounded-lg">
@@ -301,9 +284,8 @@
                     </transition>
                 </li>
 
-
-                       <!--================================ ui kits ==============================-->
-                       <li>
+                <!--================================ ui kits ==============================-->
+                <li>
                     <button @click="openList('ui-kits')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bar-chart-horizontal">
@@ -335,6 +317,7 @@
                     <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
                         <div v-if="list === 'ui-kits'" id="dropdown" class="z-10 w-full">
                             <ul class="py-2 text-sm text-darkone dark:text-dark-darkone">
+                                <!-- colors -->
                                 <li id="li2">
                                     <router-link :to="{ name: 'app.ui-kits.colors' }" href="#" @click="activeLink('colors')" :class="{ 'text-primary ': links == 'colors' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
@@ -381,7 +364,7 @@
                                     </router-link>
                                 </li>
 
-                                <!--====================== BUTTONS ==============================-->
+                                <!--BUTTONS -->
 
                                 <li id="li2">
                                     <router-link :to="{ name: 'app.ui-kits.buttons' }" href="#" @click="activeLink('buttons')" :class="{ 'text-primary ': links == 'buttons' }" class="block px-4 py-2 rounded-lg mx-2">
@@ -405,7 +388,7 @@
                                     </router-link>
                                 </li>
 
-                                <!--============================== MODAL ============================-->
+                                <!-- MODAL -->
 
                                 <li id="li2">
                                     <router-link :to="{ name: 'app.ui-kits.modal' }" href="#" @click="activeLink('modal')" :class="{ 'text-primary ': links == 'modal' }" class="block px-4 py-2 rounded-lg mx-2">
@@ -429,7 +412,7 @@
                                     </router-link>
                                 </li>
 
-                                <!--=============== droopdowns ==============================-->
+                                <!-- droopdowns -->
 
                                 <li id="li2">
                                     <router-link :to="{ name: 'app.ui-kits.droopdowns' }" href="#" @click="activeLink('droopdowns')" :class="{ 'text-primary ': links == 'droopdowns' }" class="block px-4 py-2 rounded-lg mx-2">
@@ -453,7 +436,7 @@
                                     </router-link>
                                 </li>
 
-                                <!--=================================== Badges ============================================-->
+                                <!--Badges -->
 
                                 <li id="li2">
                                     <router-link :to="{ name: 'app.ui-kits.badges' }" href="#" @click="activeLink('badges')" :class="{ 'text-primary ': links == 'badges' }" class="block px-4 py-2 rounded-lg mx-2">
@@ -477,7 +460,7 @@
                                     </router-link>
                                 </li>
 
-                                <!--======================loading indicators ================================== -->
+                                <!--loading indicators-->
 
                                 <li id="li2">
                                     <router-link :to="{ name: 'app.ui-kits.loading' }" href="#" @click="activeLink('loading ')" :class="{ 'text-primary ': links == 'loading indicators' }" class="block px-4 py-2 rounded-lg mx-2">
@@ -501,7 +484,7 @@
                                     </router-link>
                                 </li>
 
-                                <!-- ===================================state color =====================================-->
+                                <!-- state color-->
 
                                 <li id="li2">
                                     <router-link :to="{ name: 'app.ui-kits.state' }" href="#" @click="activeLink('state')" :class="{ 'text-primary ': links == 'state color' }" class="block px-4 py-2 rounded-lg mx-2">
@@ -525,7 +508,7 @@
                                     </router-link>
                                 </li>
 
-                                <!--========================typography =====================================-->
+                                <!--typography -->
 
                                 <li id="li2">
                                     <router-link :to="{ name: 'app.ui-kits.typography' }" href="#" @click="activeLink('typography')" :class="{ 'text-primary ': links == 'typography' }" class="block px-4 py-2 rounded-lg mx-2">
@@ -549,7 +532,7 @@
                                     </router-link>
                                 </li>
 
-                                <!--================================= Date bicker ============================================-->
+                                <!--Date bicker-->
 
                                 <li id="li2">
                                     <router-link :to="{ name: 'app.ui-kits.date' }" href="#" @click="activeLink('date')" :class="{ 'text-primary ': links == 'Date bicker' }" class="block px-4 py-2 rounded-lg mx-2">
@@ -575,10 +558,7 @@
                             </ul>
                         </div>
                     </transition>
-
-                    <!--=============================================== colors ===========================================-->
                 </li>
-
 
                 <!-- =====================================  reports =====================================================-->
 
