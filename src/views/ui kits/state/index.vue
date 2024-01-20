@@ -1,6 +1,6 @@
 <template>
   <div>
-    page sale
+    page state color
   </div>
 </template>
 

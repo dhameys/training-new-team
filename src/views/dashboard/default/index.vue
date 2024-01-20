@@ -1,6 +1,6 @@
 <template>
   <div>
-    page sale
+    bage default
   </div>
 </template>
 
@@ -10,6 +10,6 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less" scoped>
 
 </style>
