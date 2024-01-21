@@ -447,7 +447,7 @@
                     <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
                         <div v-if="list === 'forms'" id="dropdown" class="z-10 w-full">
                             <ul class="py-2 text-sm text-darkone dark:text-dark-darkone">
-                                <!-- ======== Basic Elements =========== -->
+                                <!--  Basic Elements -->
                                 <li id="li2">
                                     <router-link :to="{ name: 'app.basic-elements' }" href="#" @click="activeLink('basic-elements')" :class="{ 'text-primary ': links == 'basic-elements' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
@@ -470,7 +470,7 @@
                                     </router-link>
                                 </li>
 
-                                <!-- =================== GROUPS =================== -->
+                                <!-- GROUPS-->
 
                                 <li id="li2">
                                     <router-link :to="{ name: 'app.groups' }" href="#" @click="activeLink('groups')" :class="{ 'text-primary ': links == 'groups' }" class="block px-4 py-2 rounded-lg mx-2">
@@ -494,7 +494,7 @@
                                     </router-link>
                                 </li>
 
-                                <!-- ============================================ Max length =================================================-->
+                                <!--Max length-->
 
                                 <li id="li2">
                                     <router-link :to="{ name: 'app.max-length' }" href="#" @click="activeLink('max-length')" :class="{ 'text-primary ': links == 'max-length' }" class="block px-4 py-2 rounded-lg mx-2">
@@ -518,7 +518,7 @@
                                     </router-link>
                                 </li>
 
-                                <!-- =================================================  Layouts  ========================================================= -->
+                                <!--Layouts-->
 
                                 <li id="li2">
                                     <router-link :to="{ name: 'app.layouts' }" href="#" @click="activeLink('layouts')" :class="{ 'text-primary ': links == 'layouts' }" class="block px-4 py-2 rounded-lg mx-2">
@@ -541,11 +541,10 @@
                                         </div>
                                     </router-link>
                                 </li>
-                                <!-- ===================== End Layouts ======================= -->
                             </ul>
                         </div>
                     </transition>
-                </li>
+               
 
                 <!-- ==================================board=============================== -->
                 <li @click="active">
@@ -603,7 +602,6 @@ export default {
             links: 'dashboard',
             pages: '',
             hover: '',
-            // activeAccount: '',
             list: '',
             isSidebar: false
         }
