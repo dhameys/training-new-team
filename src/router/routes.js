@@ -7,7 +7,13 @@ const Darkmenu = () => import('@/views/dashboard/dark menu/Index.vue');
 const Basicelements = () => import('@/views/forms/basic elements/Index.vue');
 const Groups = () => import('@/views/forms/Groups/Index.vue');
 const Maxlength = () => import('@/views/forms/max length/Index.vue');
+const Layouts = () => import('@/views/forms/layouts/index.vue')
+
+
+// Invoice ====================================================================
 const Invoice = () => import('@/views/invoice/Index.vue');
+
+// Board =======================================================================
 const Board = () => import('@/views/Board/Index.vue')
 
 // ui kits==============================================================================
@@ -67,7 +73,12 @@ export default [
                 name: 'app.max-length',
                 component: Maxlength
             },
-
+            // Layouts ==============================
+            {
+                path: '/forms/layouts',
+                name: 'app.layouts',
+                component: Layouts
+            },
 
             // ========= invoice  
             {
