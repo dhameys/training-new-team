@@ -18,7 +18,7 @@
                         <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline capitalize" title="Read More">Read More</a>
                     </div>
                 </div>
-                
+
                 <div class="flex space-x-8 mt-8">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -31,22 +31,14 @@
                         <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline capitalize" title="Read More">Read More</a>
                     </div>
                 </div>
-
-    
-              
-                    
-               
             </div>
         </div>
     </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
 <style>
-
 </style>
