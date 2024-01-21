@@ -114,14 +114,11 @@
                 <span class="sr-only">Info</span>
                 <div><span class="font-medium">warning link</span></div>
             </div>
-            <div class="flex items-center p-4 text-sm text-white bg-btn-primary w-32 rounded-lg hover:text-slate-700 dark:bg-gray-800 dark:text-gray-300" role="alert">
+            <div class="flex items-center p-3 text-sm text-white bg-btn-primary w-32 rounded-lg hover:text-slate-700 dark:bg-gray-800 dark:text-gray-300" role="alert">
                 <span class="sr-only">Info</span>
-                <div><span class="font-medium">sky-btn sceondry link</span></div>
+                <div><span class="font-medium">btn sceondry</span></div>
             </div>
-            <div class="flex items-center p-4 text-sm text-white bg-darkone w-28 rounded-lg hover:text-slate-700 dark:bg-gray-800 dark:text-gray-300" role="alert">
-                <span class="sr-only">Info</span>
-                <div><span class="font-medium">dark</span></div>
-            </div>
+   
         </div>
     </div>
 </template>
