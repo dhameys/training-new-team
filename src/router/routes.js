@@ -13,6 +13,9 @@ const Layouts = () => import('@/views/forms/layouts/index.vue')
 // Invoice ====================================================================
 const Invoice = () => import('@/views/invoice/Index.vue');
 
+
+// Calander ====================================================================
+const Calendar = () => import('@/views/Calander/Index.vue')
 // Board =======================================================================
 const Board = () => import('@/views/Board/Index.vue')
 
@@ -34,6 +37,7 @@ const Products = () => import('@/views/product/Products/Index.vue')
 const Details = () => import('@/views/product/Product Details/Index.vue')
 const Cart = () => import('@/views/product/Cart/Index.vue')
 const Checkout = () => import('@/views/product/Checkout/Index.vue')
+
 
 export default [
     {
@@ -92,6 +96,12 @@ export default [
                 path: '/invoice',
                 name: 'app.invoice',
                 component: Invoice
+            },
+            // ================ calander ===========
+            {
+                path: '/Calendar',
+                name: 'app.Calendar',
+                component: Calendar
             },
             {
                 path: '/Board',
