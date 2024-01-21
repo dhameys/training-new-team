@@ -13,7 +13,7 @@
                         </svg>
                     </div>
                     <div>
-                        <h4 class="text-xl font-bold text-gray-700">Lorem ipsum dolor sit amet?</h4>
+                        <h4 class="text-xl font-bold text-gray-700">Lorem ipsum dolor sit amet? sdfsdfs</h4>
                         <p class="text-gray-600 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dignissimos. Neque eos, dignissimos provident reiciendis debitis repudiandae commodi perferendis et itaque, similique fugiat cumque impedit iusto vitae dolorum. Nostrum, fugit!</p>
                         <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline capitalize" title="Read More">Read More</a>
                     </div>
