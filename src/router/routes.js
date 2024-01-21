@@ -28,6 +28,13 @@ const State  = () => import('@/views/ui kits/state/Index.vue')
 const Typography  = () => import('@/views/ui kits/typography/Index.vue')
 const Date  = () => import('@/views/ui kits/date/Index.vue')
 
+// Product ========================================================================
+const Product = () => import('@/views/Product/Index.vue')
+const Products = () => import('@/views/product/Products/Index.vue')
+const Details = () => import('@/views/product/Product Details/Index.vue')
+const Cart = () => import('@/views/product/Cart/Index.vue')
+const Checkout = () => import('@/views/product/Checkout/Index.vue')
+
 export default [
     {
         path: '/',
@@ -142,6 +149,33 @@ export default [
                 path: '/ui-kits/date',
                 name: 'app.ui-kits.date',
                 component: Date
+            },
+
+            // product========================================================
+            {
+                path: '/Product',
+                name: 'app.Product',
+                component: Product
+            },
+            {
+                path: '/Products',
+                name: 'app.Products',
+                component: Products
+            },
+            {
+                path: '/Details',
+                name: 'app.Details',
+                component: Details
+            },
+            {
+                path: '/Cart',
+                name: 'app.Cart',
+                component: Cart
+            },
+            {
+                path: '/Checkout',
+                name: 'app.Checkout',
+                component: Checkout
             },
         ]
     }
