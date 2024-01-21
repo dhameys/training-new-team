@@ -427,6 +427,24 @@
 
                             <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone" :class="{ 'dark:text-dark-primary text-primary ': list === 'forms', 'md:!block': isSidebar }">Forms</span>
                         </div>
+                   
+                </li>
+
+                <!-- =====================================products==================================================== -->
+                  <li>
+                    <button @click="openList('Product')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
+                        <div class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" height="24" viewBox="0 0 24 24" 
+                            fill="none" stroke="currentColor" 
+                            stroke-width="2" stroke-linecap="round" 
+                            stroke-linejoin="round" class="lucide lucide-shopping-cart">
+                            <circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/>
+                            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+                            </svg>
+
+                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone" :class="{ 'dark:text-dark-primary text-primary ': list === 'Product', 'md:!block': isSidebar }">Products</span>
+                        </div>
                         <div>
                             <span>
                                 <svg
@@ -436,13 +454,144 @@
                                     stroke-width="1.5"
                                     stroke="currentColor"
                                     class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
-                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'dashboard' }"
+                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'products' }"
                                 >
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                                 </svg>
                             </span>
                         </div>
                     </button>
+                    <!-- Dropdown menu -->
+                    <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
+                        <div v-if="list === 'Product'" id="dropdown" class="z-10 w-full">
+                            <ul class="py-2 text-sm text-darkone dark:text-dark-darkone">
+                                <!-- ======== Product =========== -->
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.Products' }" href="#" @click="activeLink('Products')" :class="{ 'text-primary ': links == 'basic-elements' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'Products', 'md:!block': isSidebar }">Products</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+
+                                <!-- =================== Product Details =================== -->
+
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.Details' }" href="#" @click="activeLink('Details')" :class="{ 'text-primary ': links == 'groups' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'Details', 'md:!block': isSidebar }">Product Details</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+
+                                <!-- ============================================ cart =================================================-->
+
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.Cart' }" href="#" @click="activeLink('Cart')" :class="{ 'text-primary ': links == 'max-length' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'max-length', 'md:!block': isSidebar }">Carts</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+                                <!-- =================================================  Checkout  ========================================================= -->
+
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.Checkout' }" href="#" @click="activeLink('Checkout')" :class="{ 'text-primary ': links == 'Checkout' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'Checkout', 'md:!block': isSidebar }">Checkout</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+                                <!-- ===================== End Checkout ======================= -->
+
+
+                            </ul>
+                        </div>
+                    </transition>
+                </li>
+
+
+                <!-- ==========================================  INVOICE ===================================================== -->
+
+                <li @click="active">
+                    <router-link :to="{ name: 'app.invoice' }" @click="openList('invoices')" class="router-links transition flex items-center p-2 rounded-lg">
+                        <div class="flex">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-file-line-chart lucide lucide-filter w-[18.4px] h-[18.4px] text-primary dark:text-dark-darkone"
+                                :class="{ 'dark:text-dark-primary text-primary ': list == 'reports' }"
+                            >
+                                <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                                <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                                <path d="m16 13-3.5 3.5-2-2L8 17" />
+                            </svg>
+                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone ml-3" :class="{ 'dark:text-dark-primary text-primary ': list == 'invoices', 'md:!block': isSidebar }">Invoices </span>
+                        </div>
+                    
                     <!-- Dropdown menu -->
                     <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
                         <div v-if="list === 'forms'" id="dropdown" class="z-10 w-full">
