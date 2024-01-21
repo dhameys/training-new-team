@@ -3,6 +3,12 @@ const Dashboard = () => import('@/views/dashboard/Index.vue');
 const Default = () => import('@/views/dashboard/default/Index.vue');
 const Darkmenu = () => import('@/views/dashboard/dark menu/Index.vue');
 
+//  App ==============================================================================
+const App = () => import('@/views/App/Index.vue')
+const Editor = () => import('@/views/App/editor/Index.vue')
+const Mail = () => import('@/views/App/mail Box/Index.vue')
+const Chat = () => import('@/views/App/Chat/Index.vue')
+const FAQ = () => import('@/views/App/FAQ/Index.vue')
 // forms ===============================================================================
 const Basicelements = () => import('@/views/forms/basic elements/Index.vue');
 const Groups = () => import('@/views/forms/Groups/Index.vue');
@@ -13,6 +19,9 @@ const Layouts = () => import('@/views/forms/layouts/index.vue')
 // Invoice ====================================================================
 const Invoice = () => import('@/views/invoice/Index.vue');
 
+
+// Calander ====================================================================
+const Calendar = () => import('@/views/Calander/Index.vue')
 // Board =======================================================================
 const Board = () => import('@/views/Board/Index.vue')
 
@@ -34,6 +43,14 @@ const Products = () => import('@/views/product/Products/Index.vue')
 const Details = () => import('@/views/product/Product Details/Index.vue')
 const Cart = () => import('@/views/product/Cart/Index.vue')
 const Checkout = () => import('@/views/product/Checkout/Index.vue')
+// Table ==============================================================
+const Table = () => import('@/views/Table/Index.vue')
+const DataTable = () => import('@/views/Table/Data Table/Index.vue')
+const bootstrap = () => import('@/views/Table/bootstrap/Index.vue')
+// Card ==========================================================
+const Card = () => import('@/views/Card/Index.vue')
+const BasicCard = () => import('@/views/Card/Basic Card/Index.vue')
+const ThemesCard = () => import('@/views/Card/Themes Card/Index.vue')
 
 export default [
     {
@@ -56,7 +73,33 @@ export default [
                 name: 'app.dark-menu',
                 component: Darkmenu
             },
+            //  ===================== App =========
+            {
+                path: '/app',
+                name: 'app.App',
+                component: App
+            },
 
+            {
+                path: '/editor',
+                name: 'app.editor',
+                component: Editor
+            },
+            {
+                path: '/mail',
+                name: 'app.mail',
+                component: Mail
+            },
+            {
+                path: '/Chat',
+                name: 'app.Chat',
+                component: Chat
+            },
+            {
+                path: '/FAQ',
+                name: 'app.FAQ',
+                component: FAQ
+            },
             // =====================Forms
 
             {
@@ -92,6 +135,12 @@ export default [
                 path: '/invoice',
                 name: 'app.invoice',
                 component: Invoice
+            },
+            // ================ calander ===========
+            {
+                path: '/Calendar',
+                name: 'app.Calendar',
+                component: Calendar
             },
             {
                 path: '/Board',
@@ -151,7 +200,7 @@ export default [
                 component: Date
             },
 
-            // product========================================================
+            // =============================== product========================================================
             {
                 path: '/Product',
                 name: 'app.Product',
@@ -176,6 +225,38 @@ export default [
                 path: '/Checkout',
                 name: 'app.Checkout',
                 component: Checkout
+            },
+            // ========================== Table =============================
+            {
+                path: '/Table',
+                name: 'app.Table',
+                component: Table
+            },
+            {
+                path: '/DataTable',
+                name: 'app.DataTable',
+                component: DataTable
+            },
+            {
+                path: '/bootstrap',
+                name: 'app.bootstrap',
+                component: bootstrap
+            },
+            //======================================= Card ========================
+            {
+                path: '/Card',
+                name: 'app.Card',
+                component: Card
+            },
+            {
+                path: '/BasicCard',
+                name: 'app.BasicCard',
+                component: BasicCard
+            },
+            {
+                path: '/ThemesCard',
+                name: 'app.ThemesCard',
+                component: ThemesCard
             },
         ]
     }
