@@ -48,9 +48,10 @@ const Table = () => import('@/views/Table/Index.vue')
 const DataTable = () => import('@/views/Table/Data Table/Index.vue')
 const bootstrap = () => import('@/views/Table/bootstrap/Index.vue')
 // Card ==========================================================
-const Card = () => import('@/views/Card/Index.vue')
+const card = () => import('@/views/Card/Index.vue')
 const BasicCard = () => import('@/views/Card/Basic Card/Index.vue')
 const ThemesCard = () => import('@/views/Card/Themes Card/Index.vue')
+const Draggable_Card = () => import('@/views/Card/Draggable Card/Index.vue')
 
 export default [
     {
@@ -254,6 +255,27 @@ export default [
                 path: '/bootstrap',
                 name: 'app.bootstrap',
                 component: bootstrap
+            },
+               //======================================= Card ========================
+               {
+                path: '/card',
+                name: 'app.card',
+                component: card
+            },
+            {
+                path: '/BasicCard',
+                name: 'app.BasicCard',
+                component: BasicCard
+            },
+            {
+                path: '/ThemesCard',
+                name: 'app.ThemesCard',
+                component: ThemesCard
+            },
+            {
+                path: '/DraggableCard',
+                name: 'app.DraggableCard',
+                component: Draggable_Card
             },
          
         ]
