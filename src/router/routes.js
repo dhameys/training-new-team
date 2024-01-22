@@ -21,7 +21,7 @@ const Invoice = () => import('@/views/invoice/Index.vue');
 
 
 // Calander ====================================================================
-const Calendar = () => import('@/views/Calander/Index.vue')
+const calander = () => import('@/views/Calander/Index.vue')
 // Board =======================================================================
 const Board = () => import('@/views/Board/Index.vue')
 
@@ -48,9 +48,10 @@ const Table = () => import('@/views/Table/Index.vue')
 const DataTable = () => import('@/views/Table/Data Table/Index.vue')
 const bootstrap = () => import('@/views/Table/bootstrap/Index.vue')
 // Card ==========================================================
-const Card = () => import('@/views/Card/Index.vue')
+const card = () => import('@/views/Card/Index.vue')
 const BasicCard = () => import('@/views/Card/Basic Card/Index.vue')
 const ThemesCard = () => import('@/views/Card/Themes Card/Index.vue')
+const Draggable_Card = () => import('@/views/Card/Draggable Card/Index.vue')
 
 export default [
     {
@@ -136,12 +137,25 @@ export default [
                 name: 'app.invoice',
                 component: Invoice
             },
+
+            // ==============  Board =============
+
+            {
+                path: '/Board',
+                name: 'app.Board',
+                component: Board
+            },
+
+
+
+
             // ================ calander ===========
             {
-                path: '/Calendar',
-                name: 'app.Calendar',
-                component: Calendar
+                path: '/calander',
+                name: 'app.calander',
+                component: calander
             },
+            // =============  board ===================
             {
                 path: '/Board',
                 name: 'app.Board',
@@ -242,11 +256,11 @@ export default [
                 name: 'app.bootstrap',
                 component: bootstrap
             },
-            //======================================= Card ========================
-            {
-                path: '/Card',
-                name: 'app.Card',
-                component: Card
+               //======================================= Card ========================
+               {
+                path: '/card',
+                name: 'app.card',
+                component: card
             },
             {
                 path: '/BasicCard',
@@ -258,6 +272,12 @@ export default [
                 name: 'app.ThemesCard',
                 component: ThemesCard
             },
+            {
+                path: '/DraggableCard',
+                name: 'app.DraggableCard',
+                component: Draggable_Card
+            },
+         
         ]
     }
 ]
