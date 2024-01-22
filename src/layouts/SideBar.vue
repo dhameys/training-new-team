@@ -111,169 +111,17 @@
                     </transition>
                 </li>
 
-                <!-- ========================reports================================== -->
-
-                <li @click="active">
-                    <router-link :to="{ name: 'app.dashboard' }" @click="openList('reports')" class="router-links transition flex items-center p-2 rounded-lg">
-                        <div class="flex">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-filter w-[18.4px] h-[18.4px] text-primary dark:text-dark-darkone"
-                                :class="{ 'dark:text-dark-primary text-primary ': list == 'reports' }"
-                            >
-                                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
-                            </svg>
-                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone ml-3" :class="{ 'dark:text-dark-primary text-primary ': list == 'reports', 'md:!block': isSidebar }">Reports </span>
-                        </div>
-                    </router-link>
-                </li>
-<<<<<<< HEAD
-                <!--=================================== App ======================================-->
+                <!-- ========================app======================================= -->
                 <li>
                     <button @click="openList('App')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-grid"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-grid">
+                                <rect width="7" height="7" x="3" y="3" rx="1" />
+                                <rect width="7" height="7" x="14" y="3" rx="1" />
+                                <rect width="7" height="7" x="14" y="14" rx="1" />
+                                <rect width="7" height="7" x="3" y="14" rx="1" />
+                            </svg>
                             <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone" :class="{ 'dark:text-dark-primary text-primary ': list === 'App', 'md:!block': isSidebar }">Apps</span>
-                        </div>
-                        <div>
-                            <span>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
-                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'dashboard' }"
-                                >
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                                </svg>
-                            </span>
-                        </div>
-                    </button>
-                    </li>
-                     <!-- Dropdown menu -->
-                     <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
-                        <div v-if="list === 'App'" id="dropdown" class="z-10 w-full">
-                            <ul class="py-2 text-sm text-darkone dark:text-dark-darkone">
-                <!-- ====================================== Editor =============================== -->
-                <li @click="active">
-                    <router-link :to="{ name: 'app.editor' }" @click="openList('Editor')" class="router-links transition flex items-center p-2 rounded-lg">
-                        <div class="flex">
-                            <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
-                        >
-                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                        </svg>
-                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone ml-3" :class="{ 'dark:text-dark-primary text-primary ': list == 'Editor', 'md:!block': isSidebar }">Editor </span>
-                        </div>
-                    </router-link>
-                </li>
-
-                 <!-- =================== Mail Box =================== -->
-
-                 <li id="li2">
-                    <router-link :to="{ name: 'app.mail' }" href="#" @click="activeLink('Mail')" :class="{ 'text-primary ': links == 'groups' }" class="block px-4 py-2 rounded-lg mx-2">
-                        <div class="flex items-center gap-3 cursor-pointer">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
-                            >
-                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                            </svg>
-                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'Mail', 'md:!block': isSidebar }">Mail Box</span>
-                        </div>
-                    </router-link>
-                </li>
-
-                <!-- ============================================ chat =================================================-->
-
-                <li id="li2">
-                    <router-link :to="{ name: 'app.Chat' }" href="#" @click="activeLink('Chat')" :class="{ 'text-primary ': links == 'Chat' }" class="block px-4 py-2 rounded-lg mx-2">
-                        <div class="flex items-center gap-3 cursor-pointer">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
-                            >
-                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                            </svg>
-                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'Chat', 'md:!block': isSidebar }">Chat</span>
-                        </div>
-                    </router-link>
-                </li>
-                <!-- =================================================  FAQ  ========================================================= -->
-
-                <li id="li2">
-                    <router-link :to="{ name: 'app.FAQ' }" href="#" @click="activeLink('FAQ')" :class="{ 'text-primary ': links == 'Checkout' }" class="block px-4 py-2 rounded-lg mx-2">
-                        <div class="flex items-center gap-3 cursor-pointer">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
-                            >
-                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                            </svg>
-                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'FAQ', 'md:!block': isSidebar }">FAQ</span>
-                        </div>
-                    </router-link>
-                </li>
-                </ul>
-            </div>
-            </transition>
-                <!-- ===================== END FAQ ======================= -->
-
-
-                <!-- ================================= FORMS ======================================================-->
-                <li>
-                    <button @click="openList('forms')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
-                        <div class="flex items-center gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-disc-album">
-                                <rect width="18" height="18" x="3" y="3" rx="2" />
-                                <circle cx="12" cy="12" r="5" />
-                                <path d="M12 12h.01" />
-                            </svg>
-
-                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone" :class="{ 'dark:text-dark-primary text-primary ': list === 'forms', 'md:!block': isSidebar }">Forms</span>
                         </div>
                         <div>
                             <span>
@@ -293,11 +141,11 @@
                     </button>
                     <!-- Dropdown menu -->
                     <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
-                        <div v-if="list === 'forms'" id="dropdown" class="z-10 w-full">
+                        <div v-if="list === 'App'" id="dropdown" class="z-10 w-full">
                             <ul class="py-2 text-sm text-darkone dark:text-dark-darkone">
-                                <!--Basic Elements -->
+                                <!-- ====================================== Editor =============================== -->
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.basic-elements' }" href="#" @click="activeLink('basic-elements')" :class="{ 'text-primary ': links == 'basic-elements' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.editor' }" href="#" @click="activeLink('Editor')" :class="{ 'text-primary ': links == 'Editor' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -313,15 +161,15 @@
                                             >
                                                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                                             </svg>
-                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'basic-elements', 'md:!block': isSidebar }">Basic Elements</span>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'Editor', 'md:!block': isSidebar }">Editor</span>
                                         </div>
                                     </router-link>
                                 </li>
 
-                                <!-- =================== GROUPS ===========-->
+                                <!-- =================== Mail Box =================== -->
 
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.groups' }" href="#" @click="activeLink('groups')" :class="{ 'text-primary ': links == 'groups' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.mail' }" href="#" @click="activeLink('Mail')" :class="{ 'text-primary ': links == 'groups' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -337,15 +185,15 @@
                                             >
                                                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                                             </svg>
-                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'groups', 'md:!block': isSidebar }">Groups</span>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'Mail', 'md:!block': isSidebar }">Mail Box</span>
                                         </div>
                                     </router-link>
                                 </li>
 
-                                <!-- ============================================ Max length =================================================-->
+                                <!-- ============================================ chat =================================================-->
 
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.max-length' }" href="#" @click="activeLink('max-length')" :class="{ 'text-primary ': links == 'max-length' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.Chat' }" href="#" @click="activeLink('Chat')" :class="{ 'text-primary ': links == 'Chat' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -361,16 +209,14 @@
                                             >
                                                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                                             </svg>
-                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'max-length', 'md:!block': isSidebar }">Max Length</span>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'Chat', 'md:!block': isSidebar }">Chat</span>
                                         </div>
                                     </router-link>
                                 </li>
-
-
-                                <!-- =================================================  Layouts  ========================================================= -->
+                                <!-- =================================================  FAQ  ========================================================= -->
 
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.layouts' }" href="#" @click="activeLink('layouts')" :class="{ 'text-primary ': links == 'layouts' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.FAQ' }" href="#" @click="activeLink('FAQ')" :class="{ 'text-primary ': links == 'Checkout' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -386,21 +232,17 @@
                                             >
                                                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                                             </svg>
-                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'layouts', 'md:!block': isSidebar }">layouts</span>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'FAQ', 'md:!block': isSidebar }">FAQ</span>
                                         </div>
                                     </router-link>
                                 </li>
-                                <!-- ===================== End Layouts ======================= -->
-
-
+                                <!-- ===================== END FAQ ======================= -->
                             </ul>
                         </div>
                     </transition>
                 </li>
-=======
->>>>>>> 5c8e6190841eb5f5268733ddb5834795a1003928
 
-                <!--=========================ui kits ==============================-->
+                <!--=========================ui kits ==================================-->
                 <li>
                     <button @click="openList('ui-kits')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
@@ -676,7 +518,192 @@
                     </transition>
                 </li>
 
-                <!-- ==========================product====================== -->
+                <!-- =========================== FORMS ===============================-->
+                <li>
+                    <button @click="openList('forms')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
+                        <div class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-disc-album">
+                                <rect width="18" height="18" x="3" y="3" rx="2" />
+                                <circle cx="12" cy="12" r="5" />
+                                <path d="M12 12h.01" />
+                            </svg>
+
+                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone" :class="{ 'dark:text-dark-primary text-primary ': list === 'forms', 'md:!block': isSidebar }">Forms</span>
+                        </div>
+                    </button>
+
+                    <!-- Dropdown menu -->
+                    <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
+                        <div v-if="list === 'forms'" id="dropdown" class="z-10 w-full">
+                            <ul class="py-2 text-sm text-darkone dark:text-dark-darkone">
+                                <!--  Basic Elements -->
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.basic-elements' }" href="#" @click="activeLink('basic-elements')" :class="{ 'text-primary ': links == 'basic-elements' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'basic-elements', 'md:!block': isSidebar }">Basic Elements</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+
+                                <!-- GROUPS-->
+
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.groups' }" href="#" @click="activeLink('groups')" :class="{ 'text-primary ': links == 'groups' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'groups', 'md:!block': isSidebar }">Groups</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+
+                                <!--Max length-->
+
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.max-length' }" href="#" @click="activeLink('max-length')" :class="{ 'text-primary ': links == 'max-length' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'max-length', 'md:!block': isSidebar }">Max Length</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+
+                                <!--Layouts-->
+
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.layouts' }" href="#" @click="activeLink('layouts')" :class="{ 'text-primary ': links == 'layouts' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'layouts', 'md:!block': isSidebar }">layouts</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+                            </ul>
+                        </div>
+                    </transition>
+                </li>
+
+                <!-- ================================== Board ========================= -->
+                <li @click="active">
+                    <router-link :to="{ name: 'app.Board' }" @click="openList('Board')" class="router-links transition flex items-center p-2 rounded-lg">
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-codepen">
+                                <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2" />
+                                <line x1="12" x2="12" y1="22" y2="15.5" />
+                                <polyline points="22 8.5 12 15.5 2 8.5" />
+                                <polyline points="2 15.5 12 8.5 22 15.5" />
+                                <line x1="12" x2="12" y1="2" y2="8.5" />
+                            </svg>
+                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone ml-3" :class="{ 'dark:text-dark-primary text-primary ': list == 'Board', 'md:!block': isSidebar }">Board </span>
+                        </div>
+                    </router-link>
+                </li>
+
+                <!-- ==========================================  invoice =============== -->
+                <li @click="active">
+                    <router-link :to="{ name: 'app.invoice' }" @click="openList('invoices')" class="router-links transition flex items-center p-2 rounded-lg">
+                        <div class="flex">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-file-line-chart lucide lucide-filter w-[18.4px] h-[18.4px] text-primary dark:text-dark-darkone"
+                                :class="{ 'dark:text-dark-primary text-primary ': list == 'reports' }"
+                            >
+                                <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                                <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                                <path d="m16 13-3.5 3.5-2-2L8 17" />
+                            </svg>
+                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone ml-3" :class="{ 'dark:text-dark-primary text-primary ': list == 'invoices', 'md:!block': isSidebar }">Invoices </span>
+                        </div>
+                    </router-link>
+                </li>
+
+                <!-- ==========================================  calander ============= -->
+                <li @click="active">
+                    <router-link :to="{ name: 'app.calander' }" @click="openList('calander')" class="router-links transition flex items-center p-2 rounded-lg">
+                        <div class="flex">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-file-line-chart lucide lucide-filter w-[18.4px] h-[18.4px] text-primary dark:text-dark-darkone"
+                                :class="{ 'dark:text-dark-primary text-primary ': list == 'reports' }"
+                            >
+                                <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                                <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                                <path d="m16 13-3.5 3.5-2-2L8 17" />
+                            </svg>
+                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone ml-3" :class="{ 'dark:text-dark-primary text-primary ': list == 'calander', 'md:!block': isSidebar }">calander </span>
+                        </div>
+                    </router-link>
+                </li>
+
+                <!-- ==========================products================================= -->
                 <li>
                     <button @click="openList('Product')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
@@ -806,27 +833,124 @@
                     </transition>
                 </li>
 
-                <!-- =========================== FORMS ===========================-->
+                <!-- ================================= Tables ==========================-->
                 <li>
-                    <button @click="openList('forms')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
+                    <button @click="openList('Table')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-disc-album">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-table">
+                                <path d="M12 3v18" />
                                 <rect width="18" height="18" x="3" y="3" rx="2" />
-                                <circle cx="12" cy="12" r="5" />
-                                <path d="M12 12h.01" />
+                                <path d="M3 9h18" />
+                                <path d="M3 15h18" />
                             </svg>
 
-                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone" :class="{ 'dark:text-dark-primary text-primary ': list === 'forms', 'md:!block': isSidebar }">Forms</span>
+                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone" :class="{ 'dark:text-dark-primary text-primary ': list === 'forms', 'md:!block': isSidebar }">Table</span>
+                        </div>
+                        <div>
+                            <span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
+                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'Table' }"
+                                >
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </span>
                         </div>
                     </button>
-
                     <!-- Dropdown menu -->
                     <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
-                        <div v-if="list === 'forms'" id="dropdown" class="z-10 w-full">
+                        <div v-if="list === 'Table'" id="dropdown" class="z-10 w-full">
+                            <lu class="py-2 text-sm text-darkone dark:text-dark-darkone">
+                                <!-- ======== DataTable =========== -->
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.DataTable' }" href="#" @click="activeLink('DataTable')" :class="{ 'text-primary ': links == 'DataTable' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'DataTable', 'md:!block': isSidebar }">Data Table</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+
+                                <!-- =================== bootstrap=================== -->
+
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.bootstrap' }" href="#" @click="activeLink('groups')" :class="{ 'text-primary ': links == 'bootstrap' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'bootstrap', 'md:!block': isSidebar }">bootstrap</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+                            </lu>
+                        </div>
+                    </transition>
+                </li>
+
+                <!-- ============================ cards =================================-->
+                <li>
+                    <button @click="openList('card')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
+                        <div class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card">
+                                <rect width="20" height="14" x="2" y="5" rx="2" />
+                                <line x1="2" x2="22" y1="10" y2="10" />
+                            </svg>
+
+                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone" :class="{ 'dark:text-dark-primary text-primary ': list === 'card', 'md:!block': isSidebar }">cards</span>
+                        </div>
+                        <div>
+                            <span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
+                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'card' }"
+                                >
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </span>
+                        </div>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
+                        <div v-if="list === 'card'" id="dropdown" class="z-10 w-full">
                             <ul class="py-2 text-sm text-darkone dark:text-dark-darkone">
-                                <!--  Basic Elements -->
+                                <!-- ======== Basic Card =========== -->
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.basic-elements' }" href="#" @click="activeLink('basic-elements')" :class="{ 'text-primary ': links == 'basic-elements' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.BasicCard' }" href="#" @click="activeLink('BasicCard')" :class="{ 'text-primary ': links == 'BasicCard' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -842,15 +966,15 @@
                                             >
                                                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                                             </svg>
-                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'basic-elements', 'md:!block': isSidebar }">Basic Elements</span>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'BasicCard', 'md:!block': isSidebar }">Basic Card</span>
                                         </div>
                                     </router-link>
                                 </li>
 
-                                <!-- GROUPS-->
+                                <!-- =================== Themes Card =================== -->
 
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.groups' }" href="#" @click="activeLink('groups')" :class="{ 'text-primary ': links == 'groups' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.ThemesCard' }" href="#" @click="activeLink('ThemesCard')" :class="{ 'text-primary ': links == 'ThemesCard' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -866,15 +990,15 @@
                                             >
                                                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                                             </svg>
-                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'groups', 'md:!block': isSidebar }">Groups</span>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'ThemesCard', 'md:!block': isSidebar }">Themes Card</span>
                                         </div>
                                     </router-link>
                                 </li>
 
-                                <!--Max length-->
+                                <!-- =================================================  Draggable Card  ========================================================= -->
 
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.max-length' }" href="#" @click="activeLink('max-length')" :class="{ 'text-primary ': links == 'max-length' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.DraggableCard' }" href="#" @click="activeLink('Draggable_Card')" :class="{ 'text-primary ': links == 'Draggable_Card' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -890,31 +1014,7 @@
                                             >
                                                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                                             </svg>
-                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'max-length', 'md:!block': isSidebar }">Max Length</span>
-                                        </div>
-                                    </router-link>
-                                </li>
-
-                                <!--Layouts-->
-
-                                <li id="li2">
-                                    <router-link :to="{ name: 'app.layouts' }" href="#" @click="activeLink('layouts')" :class="{ 'text-primary ': links == 'layouts' }" class="block px-4 py-2 rounded-lg mx-2">
-                                        <div class="flex items-center gap-3 cursor-pointer">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="20"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
-                                            >
-                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                            </svg>
-                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'layouts', 'md:!block': isSidebar }">layouts</span>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'Draggable_Card', 'md:!block': isSidebar }">Draggable Card</span>
                                         </div>
                                     </router-link>
                                 </li>
@@ -923,9 +1023,189 @@
                     </transition>
                 </li>
 
-                <!-- ============================board============================= -->
+                <!-- ======================pages====================== -->
+                <li>
+                    <button @click="openList('pages')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
+                        <div class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud-rain-wind">
+                                <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
+                                <path d="m9.2 22 3-7" />
+                                <path d="m9 13-3 7" />
+                                <path d="m17 13-3 7" />
+                            </svg>
+
+                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone" :class="{ 'dark:text-dark-primary text-primary ': list === 'pages', 'md:!block': isSidebar }">pages</span>
+                        </div>
+                        <div>
+                            <span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
+                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'pages' }"
+                                >
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </span>
+                        </div>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
+                        <div v-if="list === 'pages'" id="dropdown" class="z-10 w-full">
+                            <ul class="py-2 text-sm text-darkone dark:text-dark-darkone">
+                                <!-- login -->
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.pages.login' }" href="#" @click="activeLink('login')" :class="{ 'text-primary ': links == 'login' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'login', 'md:!block': isSidebar }">login</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+
+                                <!--register -->
+
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.pages.register' }" href="#" @click="activeLink('registrer')" :class="{ 'text-primary ': links == 'register' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'registrer', 'md:!block': isSidebar }">register</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+
+                                <!--error 404 -->
+
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.pages.error 404' }" href="#" @click="activeLink('error 404')" :class="{ 'text-primary ': links == 'error 404' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'error 404', 'md:!block': isSidebar }">error 404</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+
+                                <!-- MODAL -->
+
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.pages.error 500' }" href="#" @click="activeLink('error 500')" :class="{ 'text-primary ': links == 'error 500' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'error 500', 'md:!block': isSidebar }">error 500</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+
+                                <!-- foeget password -->
+
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.pages.forget password' }" href="#" @click="activeLink('forget password')" :class="{ 'text-primary ': links == 'forget password' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'forget password', 'md:!block': isSidebar }">forget password</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+
+                                <!-- gellery -->
+
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.pages.gallery' }" href="#" @click="activeLink('gallery')" :class="{ 'text-primary ': links == 'gallery' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'gallery', 'md:!block': isSidebar }">gallery</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+                            </ul>
+                        </div>
+                    </transition>
+                </li>
+
+                <!-- ========================reports================================== -->
                 <li @click="active">
-                    <router-link :to="{ name: 'app.Board' }" @click="openList('Board')" class="router-links transition flex items-center p-2 rounded-lg">
+                    <router-link :to="{ name: 'app.dashboard' }" @click="openList('reports')" class="router-links transition flex items-center p-2 rounded-lg">
                         <div class="flex">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -937,31 +1217,12 @@
                                 stroke-width="2"
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
-                                class="lucide lucide-file-line-chart lucide lucide-filter w-[18.4px] h-[18.4px] text-primary dark:text-dark-darkone"
+                                class="lucide lucide-filter w-[18.4px] h-[18.4px] text-primary dark:text-dark-darkone"
                                 :class="{ 'dark:text-dark-primary text-primary ': list == 'reports' }"
                             >
-                                <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
-                                <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-                                <path d="m16 13-3.5 3.5-2-2L8 17" />
+                                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
                             </svg>
-                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone ml-3" :class="{ 'dark:text-dark-primary text-primary ': list == 'Board', 'md:!block': isSidebar }">Board </span>
-                        </div>
-                    </router-link>
-                </li>
-
-                <!-- ===========================INVOICE ========================= -->
-
-                <li @click="active">
-                    <router-link :to="{ name: 'app.invoice' }" @click="openList('invoices')" class="router-links transition flex items-center p-2 rounded-lg">
-                        <div class="flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-codepen">
-                                <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2" />
-                                <line x1="12" x2="12" y1="22" y2="15.5" />
-                                <polyline points="22 8.5 12 15.5 2 8.5" />
-                                <polyline points="2 15.5 12 8.5 22 15.5" />
-                                <line x1="12" x2="12" y1="2" y2="8.5" />
-                            </svg>
-                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone ml-3" :class="{ 'dark:text-dark-primary text-primary ': list == 'invoices', 'md:!block': isSidebar }">Invoices </span>
+                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone ml-3" :class="{ 'dark:text-dark-primary text-primary ': list == 'reports', 'md:!block': isSidebar }">Reports </span>
                         </div>
                     </router-link>
                 </li>
@@ -977,7 +1238,6 @@ export default {
     data() {
         return {
             links: 'dashboard',
-            pages: '',
             hover: '',
             list: '',
             isSidebar: false

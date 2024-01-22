@@ -21,7 +21,7 @@ const Invoice = () => import('@/views/invoice/Index.vue');
 
 
 // Calander ====================================================================
-const Calendar = () => import('@/views/Calander/Index.vue')
+// const Calendar = () => import('@/views/Calander/Index.vue')
 // Board =======================================================================
 const Board = () => import('@/views/Board/Index.vue')
 
@@ -50,7 +50,7 @@ const bootstrap = () => import('@/views/Table/bootstrap/Index.vue')
 // Card ==========================================================
 const Card = () => import('@/views/Card/Index.vue')
 const BasicCard = () => import('@/views/Card/Basic Card/Index.vue')
-const ThemesCard = () => import('@/views/Card/Themes Card/Index.vue')
+// const ThemesCard = () => import('@/views/Card/Themes Card/Index.vue')
 
 export default [
     {
@@ -137,11 +137,11 @@ export default [
                 component: Invoice
             },
             // ================ calander ===========
-            {
-                path: '/Calendar',
-                name: 'app.Calendar',
-                component: Calendar
-            },
+            // {
+            //     path: '/Calendar',
+            //     name: 'app.Calendar',
+            //     component: Calendar
+            // },
             {
                 path: '/Board',
                 name: 'app.Board',
@@ -253,11 +253,11 @@ export default [
                 name: 'app.BasicCard',
                 component: BasicCard
             },
-            {
-                path: '/ThemesCard',
-                name: 'app.ThemesCard',
-                component: ThemesCard
-            },
+            // {
+            //     path: '/ThemesCard',
+            //     name: 'app.ThemesCard',
+            //     component: ThemesCard
+            // },
         ]
     }
 ]
