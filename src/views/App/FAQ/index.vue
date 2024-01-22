@@ -13,12 +13,12 @@
                         </svg>
                     </div>
                     <div>
-                        <h4 class="text-xl font-bold text-gray-700">Lorem ipsum dolor sit amet? sdfsdfs</h4>
+                        <h4 class="text-xl font-bold text-gray-700">Lorem ipsum dolor sit amet?</h4>
                         <p class="text-gray-600 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dignissimos. Neque eos, dignissimos provident reiciendis debitis repudiandae commodi perferendis et itaque, similique fugiat cumque impedit iusto vitae dolorum. Nostrum, fugit!</p>
                         <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline capitalize" title="Read More">Read More</a>
                     </div>
                 </div>
-
+                
                 <div class="flex space-x-8 mt-8">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -31,14 +31,22 @@
                         <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline capitalize" title="Read More">Read More</a>
                     </div>
                 </div>
+
+    
+              
+                    
+               
             </div>
         </div>
     </div>
 </template>
 
 <script>
-export default {}
+export default {
+
+}
 </script>
 
 <style>
+
 </style>

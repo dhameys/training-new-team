@@ -136,6 +136,18 @@ export default [
                 name: 'app.invoice',
                 component: Invoice
             },
+
+            // ==============  Board =============
+
+            {
+                path: '/Board',
+                name: 'app.Board',
+                component: Board
+            },
+
+
+
+
             // ================ calander ===========
             {
                 path: '/Calendar',
