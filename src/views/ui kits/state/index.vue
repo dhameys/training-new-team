@@ -48,13 +48,13 @@
             <div class="mt-10 rounded-lg dark:bg-gray-800 dark:border-gray-700">
                 <h1 class="">secondry</h1>
 
-                <button class="w-96 block h-14 bg-sky-400 text-stone-50">#69cfg0</button>
-                <button class="w-96 block h-14 bg-sky-500 text-stone-50">#u0cf00</button>
-                <button class="w-96 block h-14 bg-sky-600 text-stone-50">#0f0cf0</button>
-                <button class="w-96 block h-14 bg-sky-700 text-stone-50">#f0cf00</button>
-                <button class="w-96 block h-14 bg-sky-800 text-stone-50">#jh0cff</button>
-                <button class="w-96 block h-14 bg-sky-900 text-stone-50">#8fgf00</button>
-                <button class="w-96 block h-14 bg-blue-900 text-stone-50">#6fgdcf</button>
+                <button class="w-96 block h-14 bg-[#69b9ec] text-stone-50">#69b9ec</button>
+                <button class="w-96 block h-14 bg-[#64b9eb] text-stone-50">#64b9eb</button>
+                <button class="w-96 block h-14 bg-[#60b4ea] text-stone-50">#60b4ea</button>
+                <button class="w-96 block h-14 bg-[#5bb2ea] text-stone-50">#5bb2ea</button>
+                <button class="w-96 block h-14 bg-[#57aee9] text-stone-50">#57aee9</button>
+                <button class="w-96 block h-14 bg-[#57b0e9] text-stone-50">#8fgf00</button>
+                <button class="w-96 block h-14 bg-[#49aae8] text-stone-50">#57aee9</button>
             </div>
 
             <div class="mr-10 mt-10 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">

@@ -4,7 +4,11 @@
 
 <script>
 export default {
-
+data(){
+  return{
+    name: app.ThemesCard
+  }
+}
 }
 </script>
 
