@@ -964,27 +964,7 @@
                 </li>
 
                 <!-- ============================================ END bootstrap =================================================-->
-                <li id="li2">
-                    <router-link :to="{ name: 'app.Cart' }" href="#" @click="activeLink('Cart')" :class="{ 'text-primary ': links == 'max-length' }" class="block px-4 py-2 rounded-lg mx-2">
-                        <div class="flex items-center gap-3 cursor-pointer">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
-                            >
-                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                            </svg>
-                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'max-length', 'md:!block': isSidebar }">Carts</span>
-                        </div>
-                    </router-link>
-                </li>
+
             </ul>
         </div>
         </transition>

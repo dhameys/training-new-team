@@ -255,22 +255,7 @@ export default [
                 name: 'app.bootstrap',
                 component: bootstrap
             },
-            //======================================= Card ========================
-            {
-                path: '/Card',
-                name: 'app.Card',
-                component: Card
-            },
-            {
-                path: '/BasicCard',
-                name: 'app.BasicCard',
-                component: BasicCard
-            },
-            {
-                path: '/ThemesCard',
-                name: 'app.ThemesCard',
-                component: ThemesCard
-            },
+         
         ]
     }
 ]
