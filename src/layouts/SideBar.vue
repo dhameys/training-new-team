@@ -246,6 +246,283 @@
                 </transition>
                 <!-- ===================== END FAQ ======================= -->
 
+                                <!--================================ ui kits ==============================-->
+                                <li>
+                                    <button @click="openList('ui-kits')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
+                                        <div class="flex items-center gap-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud-rain-wind">
+                                                <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
+                                                <path d="m9.2 22 3-7" />
+                                                <path d="m9 13-3 7" />
+                                                <path d="m17 13-3 7" />
+                                            </svg>
+                
+                                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone" :class="{ 'dark:text-dark-primary text-primary ': list === 'ui-kits', 'md:!block': isSidebar }">ui kits</span>
+                                        </div>
+                                        <div>
+                                            <span>
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    fill="none"
+                                                    viewBox="0 0 24 24"
+                                                    stroke-width="1.5"
+                                                    stroke="currentColor"
+                                                    class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
+                                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'ui-kits' }"
+                                                >
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </button>
+                                    <!-- Dropdown menu -->
+                                    <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
+                                        <div v-if="list === 'ui-kits'" id="dropdown" class="z-10 w-full">
+                                            <ul class="py-2 text-sm text-darkone dark:text-dark-darkone">
+                                                <!-- colors -->
+                                                <li id="li2">
+                                                    <router-link :to="{ name: 'app.ui-kits.colors' }" href="#" @click="activeLink('colors')" :class="{ 'text-primary ': links == 'colors' }" class="block px-4 py-2 rounded-lg mx-2">
+                                                        <div class="flex items-center gap-3 cursor-pointer">
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width="20"
+                                                                height="24"
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                                stroke="currentColor"
+                                                                stroke-width="2"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                                            >
+                                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                                            </svg>
+                                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'colors', 'md:!block': isSidebar }">colors</span>
+                                                        </div>
+                                                    </router-link>
+                                                </li>
+                
+                                                <!--alerts -->
+                
+                                                <li id="li2">
+                                                    <router-link :to="{ name: 'app.ui-kits.alerts' }" href="#" @click="activeLink('alerts')" :class="{ 'text-primary ': links == 'alerts' }" class="block px-4 py-2 rounded-lg mx-2">
+                                                        <div class="flex items-center gap-3 cursor-pointer">
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width="20"
+                                                                height="24"
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                                stroke="currentColor"
+                                                                stroke-width="2"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                                            >
+                                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                                            </svg>
+                                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'alerts', 'md:!block': isSidebar }">alerts</span>
+                                                        </div>
+                                                    </router-link>
+                                                </li>
+                
+                                                <!--BUTTONS -->
+                
+                                                <li id="li2">
+                                                    <router-link :to="{ name: 'app.ui-kits.buttons' }" href="#" @click="activeLink('buttons')" :class="{ 'text-primary ': links == 'buttons' }" class="block px-4 py-2 rounded-lg mx-2">
+                                                        <div class="flex items-center gap-3 cursor-pointer">
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width="20"
+                                                                height="24"
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                                stroke="currentColor"
+                                                                stroke-width="2"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                                            >
+                                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                                            </svg>
+                                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'buttons', 'md:!block': isSidebar }">Buttons</span>
+                                                        </div>
+                                                    </router-link>
+                                                </li>
+                
+                                                <!-- MODAL -->
+                
+                                                <li id="li2">
+                                                    <router-link :to="{ name: 'app.ui-kits.modal' }" href="#" @click="activeLink('modal')" :class="{ 'text-primary ': links == 'modal' }" class="block px-4 py-2 rounded-lg mx-2">
+                                                        <div class="flex items-center gap-3 cursor-pointer">
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width="20"
+                                                                height="24"
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                                stroke="currentColor"
+                                                                stroke-width="2"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                                            >
+                                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                                            </svg>
+                                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'modal', 'md:!block': isSidebar }">modal</span>
+                                                        </div>
+                                                    </router-link>
+                                                </li>
+                
+                                                <!-- droopdowns -->
+                
+                                                <li id="li2">
+                                                    <router-link :to="{ name: 'app.ui-kits.droopdowns' }" href="#" @click="activeLink('droopdowns')" :class="{ 'text-primary ': links == 'droopdowns' }" class="block px-4 py-2 rounded-lg mx-2">
+                                                        <div class="flex items-center gap-3 cursor-pointer">
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width="20"
+                                                                height="24"
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                                stroke="currentColor"
+                                                                stroke-width="2"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                                            >
+                                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                                            </svg>
+                                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'droopdowns', 'md:!block': isSidebar }">DroopDowns</span>
+                                                        </div>
+                                                    </router-link>
+                                                </li>
+                
+                                                <!--Badges -->
+                
+                                                <li id="li2">
+                                                    <router-link :to="{ name: 'app.ui-kits.badges' }" href="#" @click="activeLink('badges')" :class="{ 'text-primary ': links == 'badges' }" class="block px-4 py-2 rounded-lg mx-2">
+                                                        <div class="flex items-center gap-3 cursor-pointer">
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width="20"
+                                                                height="24"
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                                stroke="currentColor"
+                                                                stroke-width="2"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                                            >
+                                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                                            </svg>
+                                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'modal', 'md:!block': isSidebar }">Badges</span>
+                                                        </div>
+                                                    </router-link>
+                                                </li>
+                
+                                                <!--loading indicators-->
+                
+                                                <li id="li2">
+                                                    <router-link :to="{ name: 'app.ui-kits.loading' }" href="#" @click="activeLink('loading ')" :class="{ 'text-primary ': links == 'loading indicators' }" class="block px-4 py-2 rounded-lg mx-2">
+                                                        <div class="flex items-center gap-3 cursor-pointer">
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width="20"
+                                                                height="24"
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                                stroke="currentColor"
+                                                                stroke-width="2"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                                            >
+                                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                                            </svg>
+                                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'loading ', 'md:!block': isSidebar }">loading indicators</span>
+                                                        </div>
+                                                    </router-link>
+                                                </li>
+                
+                                                <!-- state color-->
+                
+                                                <li id="li2">
+                                                    <router-link :to="{ name: 'app.ui-kits.state' }" href="#" @click="activeLink('state')" :class="{ 'text-primary ': links == 'state color' }" class="block px-4 py-2 rounded-lg mx-2">
+                                                        <div class="flex items-center gap-3 cursor-pointer">
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width="20"
+                                                                height="24"
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                                stroke="currentColor"
+                                                                stroke-width="2"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                                            >
+                                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                                            </svg>
+                                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'state', 'md:!block': isSidebar }">state color</span>
+                                                        </div>
+                                                    </router-link>
+                                                </li>
+                
+                                                <!--typography -->
+                
+                                                <li id="li2">
+                                                    <router-link :to="{ name: 'app.ui-kits.typography' }" href="#" @click="activeLink('typography')" :class="{ 'text-primary ': links == 'typography' }" class="block px-4 py-2 rounded-lg mx-2">
+                                                        <div class="flex items-center gap-3 cursor-pointer">
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width="20"
+                                                                height="24"
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                                stroke="currentColor"
+                                                                stroke-width="2"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                                            >
+                                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                                            </svg>
+                                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'typography', 'md:!block': isSidebar }">typography</span>
+                                                        </div>
+                                                    </router-link>
+                                                </li>
+                
+                                                <!--Date bicker-->
+                
+                                                <li id="li2">
+                                                    <router-link :to="{ name: 'app.ui-kits.date' }" href="#" @click="activeLink('date')" :class="{ 'text-primary ': links == 'Date bicker' }" class="block px-4 py-2 rounded-lg mx-2">
+                                                        <div class="flex items-center gap-3 cursor-pointer">
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width="20"
+                                                                height="24"
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                                stroke="currentColor"
+                                                                stroke-width="2"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                                            >
+                                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                                            </svg>
+                                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'Date bicker', 'md:!block': isSidebar }">Date bicker</span>
+                                                        </div>
+                                                    </router-link>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </transition>
+                                </li>
+
+
                 <!-- ================================= FORMS ======================================================-->
                 <li>
                     <button @click="openList('forms')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
@@ -379,281 +656,35 @@
 
                 <!-- ===================== End Layouts ======================= -->
 
-                <!--================================ ui kits ==============================-->
-                <li>
-                    <button @click="openList('ui-kits')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
-                        <div class="flex items-center gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud-rain-wind">
-                                <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
-                                <path d="m9.2 22 3-7" />
-                                <path d="m9 13-3 7" />
-                                <path d="m17 13-3 7" />
-                            </svg>
 
-                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone" :class="{ 'dark:text-dark-primary text-primary ': list === 'ui-kits', 'md:!block': isSidebar }">ui kits</span>
-                        </div>
-                        <div>
-                            <span>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
-                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'ui-kits' }"
-                                >
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                                </svg>
-                            </span>
-                        </div>
-                    </button>
-                    <!-- Dropdown menu -->
-                    <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
-                        <div v-if="list === 'ui-kits'" id="dropdown" class="z-10 w-full">
-                            <ul class="py-2 text-sm text-darkone dark:text-dark-darkone">
-                                <!-- colors -->
-                                <li id="li2">
-                                    <router-link :to="{ name: 'app.ui-kits.colors' }" href="#" @click="activeLink('colors')" :class="{ 'text-primary ': links == 'colors' }" class="block px-4 py-2 rounded-lg mx-2">
-                                        <div class="flex items-center gap-3 cursor-pointer">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="20"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
-                                            >
-                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                            </svg>
-                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'colors', 'md:!block': isSidebar }">colors</span>
-                                        </div>
-                                    </router-link>
-                                </li>
+ <!-- ==========================================  calander ===================================================== -->
 
-                                <!--alerts -->
+ <li @click="active">
+    <router-link :to="{ name: 'app.calander' }" @click="openList('calander')" class="router-links transition flex items-center p-2 rounded-lg">
+        <div class="flex">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-file-line-chart lucide lucide-filter w-[18.4px] h-[18.4px] text-primary dark:text-dark-darkone"
+                :class="{ 'dark:text-dark-primary text-primary ': list == 'reports' }"
+            >
+                <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                <path d="m16 13-3.5 3.5-2-2L8 17" />
+            </svg>
+            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone ml-3" :class="{ 'dark:text-dark-primary text-primary ': list == 'calander', 'md:!block': isSidebar }">calander </span>
+        </div>
+    </router-link>
+</li>
 
-                                <li id="li2">
-                                    <router-link :to="{ name: 'app.ui-kits.alerts' }" href="#" @click="activeLink('alerts')" :class="{ 'text-primary ': links == 'alerts' }" class="block px-4 py-2 rounded-lg mx-2">
-                                        <div class="flex items-center gap-3 cursor-pointer">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="20"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
-                                            >
-                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                            </svg>
-                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'alerts', 'md:!block': isSidebar }">alerts</span>
-                                        </div>
-                                    </router-link>
-                                </li>
 
-                                <!--BUTTONS -->
-
-                                <li id="li2">
-                                    <router-link :to="{ name: 'app.ui-kits.buttons' }" href="#" @click="activeLink('buttons')" :class="{ 'text-primary ': links == 'buttons' }" class="block px-4 py-2 rounded-lg mx-2">
-                                        <div class="flex items-center gap-3 cursor-pointer">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="20"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
-                                            >
-                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                            </svg>
-                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'buttons', 'md:!block': isSidebar }">Buttons</span>
-                                        </div>
-                                    </router-link>
-                                </li>
-
-                                <!-- MODAL -->
-
-                                <li id="li2">
-                                    <router-link :to="{ name: 'app.ui-kits.modal' }" href="#" @click="activeLink('modal')" :class="{ 'text-primary ': links == 'modal' }" class="block px-4 py-2 rounded-lg mx-2">
-                                        <div class="flex items-center gap-3 cursor-pointer">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="20"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
-                                            >
-                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                            </svg>
-                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'modal', 'md:!block': isSidebar }">modal</span>
-                                        </div>
-                                    </router-link>
-                                </li>
-
-                                <!-- droopdowns -->
-
-                                <li id="li2">
-                                    <router-link :to="{ name: 'app.ui-kits.droopdowns' }" href="#" @click="activeLink('droopdowns')" :class="{ 'text-primary ': links == 'droopdowns' }" class="block px-4 py-2 rounded-lg mx-2">
-                                        <div class="flex items-center gap-3 cursor-pointer">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="20"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
-                                            >
-                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                            </svg>
-                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'droopdowns', 'md:!block': isSidebar }">DroopDowns</span>
-                                        </div>
-                                    </router-link>
-                                </li>
-
-                                <!--Badges -->
-
-                                <li id="li2">
-                                    <router-link :to="{ name: 'app.ui-kits.badges' }" href="#" @click="activeLink('badges')" :class="{ 'text-primary ': links == 'badges' }" class="block px-4 py-2 rounded-lg mx-2">
-                                        <div class="flex items-center gap-3 cursor-pointer">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="20"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
-                                            >
-                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                            </svg>
-                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'modal', 'md:!block': isSidebar }">Badges</span>
-                                        </div>
-                                    </router-link>
-                                </li>
-
-                                <!--loading indicators-->
-
-                                <li id="li2">
-                                    <router-link :to="{ name: 'app.ui-kits.loading' }" href="#" @click="activeLink('loading ')" :class="{ 'text-primary ': links == 'loading indicators' }" class="block px-4 py-2 rounded-lg mx-2">
-                                        <div class="flex items-center gap-3 cursor-pointer">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="20"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
-                                            >
-                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                            </svg>
-                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'loading ', 'md:!block': isSidebar }">loading indicators</span>
-                                        </div>
-                                    </router-link>
-                                </li>
-
-                                <!-- state color-->
-
-                                <li id="li2">
-                                    <router-link :to="{ name: 'app.ui-kits.state' }" href="#" @click="activeLink('state')" :class="{ 'text-primary ': links == 'state color' }" class="block px-4 py-2 rounded-lg mx-2">
-                                        <div class="flex items-center gap-3 cursor-pointer">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="20"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
-                                            >
-                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                            </svg>
-                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'state', 'md:!block': isSidebar }">state color</span>
-                                        </div>
-                                    </router-link>
-                                </li>
-
-                                <!--typography -->
-
-                                <li id="li2">
-                                    <router-link :to="{ name: 'app.ui-kits.typography' }" href="#" @click="activeLink('typography')" :class="{ 'text-primary ': links == 'typography' }" class="block px-4 py-2 rounded-lg mx-2">
-                                        <div class="flex items-center gap-3 cursor-pointer">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="20"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
-                                            >
-                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                            </svg>
-                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'typography', 'md:!block': isSidebar }">typography</span>
-                                        </div>
-                                    </router-link>
-                                </li>
-
-                                <!--Date bicker-->
-
-                                <li id="li2">
-                                    <router-link :to="{ name: 'app.ui-kits.date' }" href="#" @click="activeLink('date')" :class="{ 'text-primary ': links == 'Date bicker' }" class="block px-4 py-2 rounded-lg mx-2">
-                                        <div class="flex items-center gap-3 cursor-pointer">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="20"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
-                                            >
-                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                            </svg>
-                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'Date bicker', 'md:!block': isSidebar }">Date bicker</span>
-                                        </div>
-                                    </router-link>
-                                </li>
-                            </ul>
-                        </div>
-                    </transition>
-                </li>
 
                 <!-- =====================================products==================================================== -->
                 <li>
@@ -781,11 +812,12 @@
                                         </div>
                                     </router-link>
                                 </li>
-                                <!-- ===================== End Checkout ======================= -->
+                              
                             </ul>
                         </div>
                     </transition>
                 </li>
+                    <!-- ===================== End Checkout ======================= -->
 
                 <!-- ==========================================  INVOICE ===================================================== -->
 
@@ -813,7 +845,6 @@
                         </div>
                     </router-link>
                 </li>
-
                 <!-- ================================== Board ========================= -->
 
                 <li @click="active">
@@ -831,6 +862,7 @@
                     </router-link>
                 </li>
 
+                <!--==============================  END board===================================-->
                <!-- ========================reports================================== -->
 
                <li @click="active">

@@ -21,7 +21,7 @@ const Invoice = () => import('@/views/invoice/Index.vue');
 
 
 // Calander ====================================================================
-const Calendar = () => import('@/views/Calander/Index.vue')
+const calander = () => import('@/views/Calander/Index.vue')
 // Board =======================================================================
 const Board = () => import('@/views/Board/Index.vue')
 
@@ -150,10 +150,11 @@ export default [
 
             // ================ calander ===========
             {
-                path: '/Calendar',
-                name: 'app.Calendar',
-                component: Calendar
+                path: '/calander',
+                name: 'app.calander',
+                component: calander
             },
+            // =============  board ===================
             {
                 path: '/Board',
                 name: 'app.Board',
