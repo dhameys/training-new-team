@@ -1,44 +1,265 @@
 <template>
-    <div class="p-0">
-        <div class="bg-white p-2 rounded-lg shadow-xl py-4 mt-12">
-            <h4 class="text-4xl font-bold text-gray-800 tracking-widest uppercase text-center">FAQ</h4>
-            <p class="text-center text-gray-600 text-sm mt-2">Here are some of the frequently asked questions</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 xl:gap-12 px-2 xl:px-12 mt-4">
-                <div class="flex space-x-8 mt-8">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path>
-                        </svg>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-bold text-gray-700">Lorem ipsum dolor sit amet?</h4>
-                        <p class="text-gray-600 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dignissimos. Neque eos, dignissimos provident reiciendis debitis repudiandae commodi perferendis et itaque, similique fugiat cumque impedit iusto vitae dolorum. Nostrum, fugit!</p>
-                        <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline capitalize" title="Read More">Read More</a>
-                    </div>
-                </div>
-                
-                <div class="flex space-x-8 mt-8">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                        </svg>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-bold text-gray-700">Consectetur adipisicing elit?</h4>
-                        <p class="text-gray-600 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dignissimos. Neque eos, dignissimos provident reiciendis debitis repudiandae commodi perferendis et itaque, similique fugiat cumque impedit iusto vitae dolorum. Nostrum, fugit!</p>
-                        <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline capitalize" title="Read More">Read More</a>
+ 
+    <div class="bg-gray-100 dark:bg-gray-900">
+        <div class="container mx-auto">
+            <div role="article" class="bg-gray-100 dark:bg-gray-900 py-12 md:px-8">
+                <div class="px-4 xl:px-0 py-10">
+                    <div class="flex flex-col lg:flex-row flex-wrap">
+                        <div class="mt-4 lg:mt-0 lg:w-3/5">
+                            <div>
+                                <h1 class="text-3xl ml-2 lg:ml-0 lg:text-4xl font-bold text-gray-900 dark:text-white tracking-normal lg:w-11/12">Frequently asked questions</h1>
+                            </div>
+                        </div>
+                        <div class="lg:w-2/5 flex mt-10 ml-2 lg:ml-0 lg:mt-0 lg:justify-end">
+                            <div class="pt-2 relative text-gray-600">
+                                <input class="focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none" type="search" name="search" placeholder="Search" />
+                                <button type="submit" class="focus:ring-2 focus:ring-offset-2 text-gray-600 focus:text-indigo-700 dark:text-indigo-400 focus:rounded-full focus:bg-gray-100 focus:ring-indigo-700 bg-white focus:outline-none absolute right-0 top-0 mt-5 mr-4">
+                                  <img class="h-4 w-4" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg1.svg" alt="search">
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-    
-              
-                    
-               
+                <div class="px-6 xl:px-0">
+                    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 pb-6 gap-8">
+                        <div role="cell" class="bg-gray-100 dark:bg-gray-800 ">
+                            <div class="bg-white p-5 roun dark:bg-gray-800 ded-md relative h-full w-full">
+                                <!-- class="absolute inset-0 object-center object-cover h-full w-full"  -->
+                                <span><img class="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/27R6nk5/home-1.png" alt="home-1" /></span>
+                                <h1 class="pb-4 text-2xl dark:text-white font-semibold">Account Overview</h1>
+                                <div class="my-5">
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full space-x-3">
+                                       <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100">First time, what do I do next?</h4>
+                                    </div>
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full space-x-3">
+                                        <div>
+                                            <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100">Changing you profile picture and other information</h4>
+                                    </div>
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                            <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">I didnt get a confirmation email, what should I do next</h4>
+                                    </div>
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                            <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">What is the refund policy if I have to cancel during the month</h4>
+                                    </div>
+                                </div>
+                                <a class="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 dark:text-indigo-400 font-bold cursor-pointer flex items-center" href="javascript:void(0)">
+                                    <p>Show All</p>
+                                    <div>
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg3.svg" alt="arrow">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div role="cell" class="bg-gray-100 dark:bg-gray-800 ">
+                            <div class="bg-white p-5 roun dark:bg-gray-800 ded-md relative h-full w-full">
+                                <!-- class="absolute inset-0 object-center object-cover h-full w-full"  -->
+                                <span><img class="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/bdGyLYk/pricetags-1.png" alt="pricetags-1" /></span>
+                                <h1 class="pb-4 text-2xl dark:text-white font-semibold">Subscription Plans</h1>
+                                <div class="my-5">
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                            <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">First time, what do I do next?</h4>
+                                    </div>
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                            <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">Changing you profile picture and other information</h4>
+                                    </div>
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                            <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">I didnt get a confirmation email, what should I do next</h4>
+                                    </div>
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                            <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">What is the refund policy if I have to cancel during the month</h4>
+                                    </div>
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                            <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">What is the refund policy?</h4>
+                                    </div>
+                                </div>
+                                <a class="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 dark:text-indigo-400 font-bold cursor-pointer flex items-center" href="javascript:void(0)">
+                                    <p>Show All</p>
+                                    <div>
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg3.svg" alt="arrow">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div role="cell" class="bg-gray-100 dark:bg-gray-800 ">
+                            <div class="bg-white p-5 roun dark:bg-gray-800 ded-md relative h-full w-full">
+                                <!-- class="absolute inset-0 object-center object-cover h-full w-full"  -->
+                                <span><img class="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/GT4KHvJ/card-1.png" alt="home-1" /></span>
+                                <h1 class="pb-4 text-2xl dark:text-white font-semibold">Payment Options</h1>
+                                <div class="my-5">
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                            <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">First time, what do I do next?</h4>
+                                    </div>
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                            <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">Changing you profile picture and other information</h4>
+                                    </div>
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                            <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">I didnt get a confirmation email, what should I do next</h4>
+                                    </div>
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                            <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">What is the refund policy if I have to cancel during the month</h4>
+                                    </div>
+                                </div>
+                                <a class="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 dark:text-indigo-400 font-bold cursor-pointer flex items-center" href="javascript:void(0)">
+                                    <p>Show All</p>
+                                    <div>
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg3.svg" alt="arrow">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div role="cell" class="bg-gray-100 dark:bg-gray-800 ">
+                            <div class="bg-white p-5 roun dark:bg-gray-800 ded-md h-full relative w-full">
+                                <!-- class="absolute inset-0 object-center object-cover h-full w-full"  -->
+                                <span><img class="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/rG4r6NJ/notifications-1.png" alt="home-1" /></span>
+                                <h1 class="pb-4 text-2xl dark:text-white font-semibold">Notification Settings</h1>
+                                <div class="my-5">
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                            <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">First time, what do I do next?</h4>
+                                    </div>
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                            <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">Changing you profile picture and other information</h4>
+                                    </div>
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                            <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">I didnt get a confirmation email, what should I do next</h4>
+                                    </div>
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                               <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">What is the refund policy if I have to cancel during the month</h4>
+                                    </div>
+                                </div>
+                                <a class="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 dark:text-indigo-400 font-bold cursor-pointer flex items-center" href="javascript:void(0)">
+                                    <p>Show All</p>
+                                    <div>
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg3.svg" alt="arrow">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div role="cell" class="bg-gray-100 dark:bg-gray-800 ">
+                            <div class="relative bg-white dark:bg-gray-800  p-5 rounded-md relative h-full w-full">
+                                <!-- class="absolute inset-0 object-center object-cover h-full w-full"  -->
+                                <span><img class="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/HFC1hqn/people-1.png" alt="home-1" /></span>
+                                <h1 class="pb-4 text-2xl dark:text-white font-semibold">Profile Preferences</h1>
+                                <div class="my-5">
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                               <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">First time, what do I do next?</h4>
+                                    </div>
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                               <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">Changing you profile picture and other information</h4>
+                                    </div>
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                              <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">I didnt get a confirmation email, what should I do next</h4>
+                                    </div>
+                                </div>
+                                <a class="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 dark:text-indigo-400 font-bold cursor-pointer flex items-center" href="javascript:void(0)">
+                                    <p>Show All</p>
+                                    <div>
+                                      <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg3.svg" alt="arrow">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div role="cell" class="bg-gray-100 dark:bg-gray-800 ">
+                            <div class="relative bg-white dark:bg-gray-800  p-5 rounded-md relative h-full w-full">
+                                <!-- class="absolute inset-0 object-center object-cover h-full w-full"  -->
+                                <span><img class="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/QX80fYm/lock-closed-1.png" alt="home-1" /></span>
+                                <h1 class="pb-4 text-2xl dark:text-white font-semibold">Privacy and Cookies</h1>
+                                <div class="my-5">
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                              <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">First time, what do I do next?</h4>
+                                    </div>
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                              <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">Changing you profile picture and other information</h4>
+                                    </div>
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                               <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">I didnt get a confirmation email, what should I do next</h4>
+                                    </div>
+                                    <div class="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
+                                        <div>
+                                               <img class="dark:bg-gray-400" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg2.svg" alt="bullet">
+                                        </div>
+                                        <h4 class="text-md text-gray-900 dark:text-gray-100 pl-4">What is the refund policy if I have to cancel during the month</h4>
+                                    </div>
+                                </div>
+                                <a class="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 dark:text-indigo-400 font-bold cursor-pointer flex items-center" href="javascript:void(0)">
+                                    <p>Show All</p>
+                                    <div>
+                                      <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-1-svg3.svg" alt="arrow">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
         </div>
     </div>
+
 </template>
 
 <script>
