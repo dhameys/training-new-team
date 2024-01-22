@@ -21,7 +21,9 @@ const Invoice = () => import('@/views/invoice/Index.vue');
 
 
 // Calander ====================================================================
+
 const calander = () => import('@/views/Calander/Index.vue')
+
 // Board =======================================================================
 const Board = () => import('@/views/Board/Index.vue')
 
@@ -59,6 +61,7 @@ const Error = () => import('@/views/pages/error 404/Index.vue')
 const Error500 = () => import('@/views/pages/error 500/Index.vue')
 const Forgetpassword = () => import('@/views/pages/forget password/Index.vue')
 const Gallery = () => import('@/views/pages/gallery/Index.vue')
+// const ThemesCard = () => import('@/views/Card/Themes Card/Index.vue')
 
 export default [
     {
@@ -157,6 +160,11 @@ export default [
 
 
             // ================ calander ===========
+            // {
+            //     path: '/Calendar',
+            //     name: 'app.Calendar',
+            //     component: Calendar
+            // },
             {
                 path: '/calander',
                 name: 'app.calander',
@@ -274,6 +282,11 @@ export default [
                 name: 'app.BasicCard',
                 component: BasicCard
             },
+            // {
+            //     path: '/ThemesCard',
+            //     name: 'app.ThemesCard',
+            //     component: ThemesCard
+            // },
             {
                 path: '/ThemesCard',
                 name: 'app.ThemesCard',
