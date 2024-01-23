@@ -551,7 +551,7 @@
                                     stroke-width="1.5"
                                     stroke="currentColor"
                                     class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
-                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'dashboard' }"
+                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'forms' }"
                                 >
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                                 </svg>
