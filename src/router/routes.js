@@ -1,7 +1,7 @@
 const Layout = () => import('@/layouts/Index.vue')
-const Dashboard = () => import('@/views/dashboard/Index.vue');
-const Default = () => import('@/views/dashboard/default/Index.vue');
-const Darkmenu = () => import('@/views/dashboard/dark menu/Index.vue');
+const Dashboard = () => import('@/views/dashboard/Index.vue')
+const Default = () => import('@/views/dashboard/default/Index.vue')
+const Darkmenu = () => import('@/views/dashboard/dark menu/Index.vue')
 
 //  App ==============================================================================
 const App = () => import('@/views/App/Index.vue')
@@ -10,15 +10,13 @@ const Mail = () => import('@/views/App/mail Box/Index.vue')
 const Chat = () => import('@/views/App/Chat/Index.vue')
 const FAQ = () => import('@/views/App/FAQ/Index.vue')
 // forms ===============================================================================
-const Basicelements = () => import('@/views/forms/basic elements/Index.vue');
-const Groups = () => import('@/views/forms/Groups/Index.vue');
-const Maxlength = () => import('@/views/forms/max length/Index.vue');
+const Basicelements = () => import('@/views/forms/basic elements/Index.vue')
+const Groups = () => import('@/views/forms/Groups/Index.vue')
+const Maxlength = () => import('@/views/forms/max length/Index.vue')
 const Layouts = () => import('@/views/forms/layouts/index.vue')
 
-
 // Invoice ====================================================================
-const Invoice = () => import('@/views/invoice/Index.vue');
-
+const Invoice = () => import('@/views/invoice/Index.vue')
 
 // Calander ====================================================================
 const calander = () => import('@/views/Calander/Index.vue')
@@ -33,9 +31,9 @@ const Modal = () => import('@/views/ui kits/modal/Index.vue')
 const Droopdowns = () => import('@/views/ui kits/droopdowns/Index.vue')
 const Badges = () => import('@/views/ui kits/badges/Index.vue')
 const Loading = () => import('@/views/ui kits/loading/Index.vue')
-const State  = () => import('@/views/ui kits/state/Index.vue')
-const Typography  = () => import('@/views/ui kits/typography/Index.vue')
-const Date  = () => import('@/views/ui kits/date/Index.vue')
+const State = () => import('@/views/ui kits/state/Index.vue')
+const Typography = () => import('@/views/ui kits/typography/Index.vue')
+const Date = () => import('@/views/ui kits/date/Index.vue')
 
 // Product ========================================================================
 const Product = () => import('@/views/Product/Index.vue')
@@ -43,6 +41,10 @@ const Products = () => import('@/views/product/Products/Index.vue')
 const Details = () => import('@/views/product/Product Details/Index.vue')
 const Cart = () => import('@/views/product/Cart/Index.vue')
 const Checkout = () => import('@/views/product/Checkout/Index.vue')
+// Icons =============================================================
+const icon = () => import('@/views/icon/Index.vue')
+const fontawesomeicon = () => import('@/views/icon/fontawesome  icon/Index.vue')
+const themefyicon = () => import('@/views/icon/themefy  icon/Index.vue')
 // Table ==============================================================
 const Table = () => import('@/views/Table/Index.vue')
 const DataTable = () => import('@/views/Table/Data Table/Index.vue')
@@ -50,7 +52,7 @@ const bootstrap = () => import('@/views/Table/bootstrap/Index.vue')
 // Card ==========================================================
 const card = () => import('@/views/Card/Index.vue')
 const BasicCard = () => import('@/views/Card/Basic Card/Index.vue')
-const ThemesCard = () => import('@/views/Card/Themes Card/Index.vue')
+const ThemesCard = () => import('@/views/Card/Themes Cards/Index.vue')
 const Draggable_Card = () => import('@/views/Card/Draggable Card/Index.vue')
 
 export default [
@@ -108,7 +110,7 @@ export default [
                 name: 'app.basic-elements',
                 component: Basicelements
             },
-            
+
             // =============== GROUPS
 
             {
@@ -131,7 +133,7 @@ export default [
                 component: Layouts
             },
 
-            // ========= invoice  
+            // ========= invoice
             {
                 path: '/invoice',
                 name: 'app.invoice',
@@ -145,9 +147,6 @@ export default [
                 name: 'app.Board',
                 component: Board
             },
-
-
-
 
             // ================ calander ===========
             {
@@ -240,6 +239,23 @@ export default [
                 name: 'app.Checkout',
                 component: Checkout
             },
+            // ======================Icons =================================
+            {
+                path: '/icon',
+                name: 'app.icon',
+                component: icon
+            },
+            {
+                path: '/fontawesomeicons',
+                name: 'app.fontawesomeicons',
+                component: fontawesomeicon
+            },
+            {
+                path: '/themefyicons',
+                name: 'app.themefyicons',
+                component: themefyicon
+            },
+
             // ========================== Table =============================
             {
                 path: '/Table',
@@ -256,8 +272,8 @@ export default [
                 name: 'app.bootstrap',
                 component: bootstrap
             },
-               //======================================= Card ========================
-               {
+            //======================================= Card ========================
+            {
                 path: '/card',
                 name: 'app.card',
                 component: card
@@ -276,8 +292,7 @@ export default [
                 path: '/DraggableCard',
                 name: 'app.DraggableCard',
                 component: Draggable_Card
-            },
-         
+            }
         ]
     }
 ]

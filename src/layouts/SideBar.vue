@@ -132,8 +132,7 @@
                                     stroke-width="1.5"
                                     stroke="currentColor"
                                     class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
-                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'dashboard' }"
-                                >
+                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'App' }">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                                 </svg>
                             </span>
@@ -724,8 +723,7 @@
                                     stroke-width="1.5"
                                     stroke="currentColor"
                                     class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
-                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'products' }"
-                                >
+                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'Product' }">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                                 </svg>
                             </span>
@@ -825,6 +823,87 @@
                                                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                                             </svg>
                                             <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'Checkout', 'md:!block': isSidebar }">Checkout</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+                            </ul>
+                        </div>
+                    </transition>
+                </li>
+
+                  <!-- ============================ Icons =================================-->
+                  <li>
+                    <button @click="openList('icons')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
+                        <div class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card">
+                                <rect width="20" height="14" x="2" y="5" rx="2" />
+                                <line x1="2" x2="22" y1="10" y2="10" />
+                            </svg>
+
+                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone" :class="{ 'dark:text-dark-primary text-primary ': list === 'icnos', 'md:!block': isSidebar }">icons</span>
+                        </div>
+                        <div>
+                            <span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
+                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'icons' }"
+                                >
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </span>
+                        </div>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
+                        <div v-if="list === 'icons'" id="dropdown" class="z-10 w-full">
+                            <ul class="py-2 text-sm text-darkone dark:text-dark-darkone">
+                                <!-- ======== fontawesome icons =========== -->
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.fontawesomeicons' }" href="#" @click="activeLink('fontawesomeicon')" :class="{ 'text-primary ': links == 'fontawesomeicon' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'fontawesomeicon', 'md:!block': isSidebar }">fontawesome icons</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+                                <!-- =================================================  themefy icons  ========================================================= -->
+
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.themefyicons' }" href="#" @click="activeLink('themefyicon')" :class="{ 'text-primary ': links == 'themefyicon' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'themefyicon', 'md:!block': isSidebar }">themfy icons</span>
                                         </div>
                                     </router-link>
                                 </li>
@@ -1046,6 +1125,7 @@
                         </div>
                     </router-link>
                 </li>
+
             </ul>
         </div>
     </aside>
