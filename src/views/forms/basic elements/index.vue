@@ -1,5 +1,5 @@
 <template>
-    <section class="grid grid-cols-2 h-auto w-full">
+    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 h-auto w-full">
         <form class="w-full p-3">
             <div class="w-full basis-1/2 bg-white h-40 border-box shadow rounded-2xl flex flex-col justify-between  p-2">
                 <div class="w-full mx-2 my-1">
