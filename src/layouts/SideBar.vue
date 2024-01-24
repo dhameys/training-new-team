@@ -9,7 +9,7 @@
     >
         <div class="h-full px-3 pb-4 overflow-y-auto">
             <ul class="space-y-2 font-medium">
-                <!-- =========================dashboard================================ -->
+                <!-- ========================= dashboard =======================-->
                 <li>
                     <button @click="openList('dashboard')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
@@ -32,18 +32,18 @@
                             Dashboard
                         </div>
                         <span>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
-                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'dashboard' }"
-                                >
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                                </svg>
-                            </span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
+                                :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'dashboard' }"
+                            >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </span>
                     </button>
 
                     <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
@@ -124,7 +124,7 @@
                     </transition>
                 </li>
 
-                <!-- ========================app======================================= -->
+                <!-- ======================== app ==============================-->
                 <li>
                     <button @click="openList('App')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
@@ -254,7 +254,7 @@
                     </transition>
                 </li>
 
-                <!--=========================ui kits ==================================-->
+                <!--=========================ui kits =========================-->
                 <li>
                     <button @click="openList('ui-kits')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
@@ -530,7 +530,7 @@
                     </transition>
                 </li>
 
-                <!-- =========================== FORMS ===============================-->
+                <!-- =========================== FORMS ========================-->
                 <li>
                     <button @click="openList('forms')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
@@ -543,18 +543,18 @@
                             <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone" :class="{ 'dark:text-dark-primary text-primary ': list === 'forms', 'md:!block': isSidebar }">Forms</span>
                         </div>
                         <span>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
-                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'forms' }"
-                                >
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                                </svg>
-                            </span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
+                                :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'forms' }"
+                            >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </span>
                     </button>
 
                     <!-- Dropdown menu -->
@@ -660,7 +660,7 @@
                     </transition>
                 </li>
 
-                <!-- ================================== Board ========================= -->
+                <!-- ========================== Board ==========================-->
                 <li @click="active">
                     <router-link :to="{ name: 'app.Board' }" @click="openList('Board')" class="router-links transition flex items-center p-2 rounded-lg">
                         <div class="flex">
@@ -676,7 +676,7 @@
                     </router-link>
                 </li>
 
-                <!-- ==========================================  invoice =============== -->
+                <!-- ======================== invoice ===========================-->
                 <li @click="active">
                     <router-link :to="{ name: 'app.invoice' }" @click="openList('invoices')" class="router-links transition flex items-center p-2 rounded-lg">
                         <div class="flex">
@@ -702,7 +702,7 @@
                     </router-link>
                 </li>
 
-                <!-- ==========================================  calander ============= -->
+                <!-- =======================  calander ===========================-->
                 <li @click="active">
                     <router-link :to="{ name: 'app.calander' }" @click="openList('calander')" class="router-links transition flex items-center p-2 rounded-lg">
                         <div class="flex">
@@ -728,7 +728,7 @@
                     </router-link>
                 </li>
 
-                <!-- ==========================products================================= -->
+                <!-- ==========================products===================== -->
                 <li>
                     <button @click="openList('Product')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
@@ -1046,7 +1046,7 @@
                 </li>
                 
 
-                <!-- ================================= Tables ==========================-->
+                 <!-- ================================= Tables ==============-->
                 <li>
                     <button @click="openList('Table')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
@@ -1130,7 +1130,7 @@
                     </transition>
                 </li>
 
-                <!-- ============================ cards =================================-->
+                <!-- ============================ cards ====================-->
                 <li>
                     <button @click="openList('card')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
@@ -1417,7 +1417,7 @@
                     </transition>
                 </li>
 
-                <!-- ========================reports================================== -->
+                <!-- ========================reports==================== -->
                 <li @click="active">
                     <router-link :to="{ name: 'app.dashboard' }" @click="openList('reports')" class="router-links transition flex items-center p-2 rounded-lg">
                         <div class="flex">
