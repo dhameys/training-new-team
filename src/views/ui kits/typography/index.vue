@@ -251,7 +251,6 @@
 
     <div class="flex gap-2">
         <div class="w-1/2 font-semibold block p-6 bg-white border border-gray-200 rounded-lg dark:border-gray-700 dark:hover:bg-gray-700">
-            
             <h2 class="text-lg font-bold dark:text-white mb-10">list elements</h2>
             <p class="text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet</p>
             <p class="text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet</p>
@@ -281,7 +280,6 @@
 
     <div class="flex gap-2">
         <div class="w-1/2 font-semibold block p-6 bg-white border border-gray-200 rounded-lg dark:border-gray-700 dark:hover:bg-gray-700">
-            
             <h2 class="text-lg font-bold dark:text-white mb-10">list elements</h2>
             <p class="text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet</p>
             <p class="text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet</p>
@@ -311,18 +309,65 @@
 
     <div class="flex gap-2">
         <div class="w-1/2 font-semibold block p-6 bg-white border border-gray-200 rounded-lg dark:border-gray-700 dark:hover:bg-gray-700">
-            
             <h2 class="text-lg font-bold dark:text-white mb-10">Fontawesome list elements</h2>
-            
-            <p class="text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet</p>
-            <ChevronsRight size={20} strokeWidth={1.5} />
-            <p class="text-gray-500 dark:text-gray-400"> <span><ChevronsRight size={20} /></span>Lorem ipsum dolor sit amet</p>
-            <p class="text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet</p>
-            <p class="text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet</p>
-            <p class="text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet</p>
-            <p class="text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet</p>
-            <p class="text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet</p>
-            <p class="text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet</p>
+
+            <p class="text-gray-500 dark:text-gray-400 flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-right">
+                    <path d="m6 17 5-5-5-5" />
+                    <path d="m13 17 5-5-5-5" />
+                </svg>
+                Lorem ipsum dolor sit amet
+            </p>
+
+            <p class="text-gray-500 dark:text-gray-400 flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-right">
+                    <path d="m6 17 5-5-5-5" />
+                    <path d="m13 17 5-5-5-5" />
+                </svg>
+                Lorem ipsum dolor sit amet
+            </p>
+            <p class="text-gray-500 dark:text-gray-400 flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-right">
+                    <path d="m6 17 5-5-5-5" />
+                    <path d="m13 17 5-5-5-5" />
+                </svg>
+                Lorem ipsum dolor sit amet
+            </p>
+            <p class="text-gray-500 dark:text-gray-400 flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-right">
+                    <path d="m6 17 5-5-5-5" />
+                    <path d="m13 17 5-5-5-5" />
+                </svg>
+                Lorem ipsum dolor sit amet
+            </p>
+            <p class="text-gray-500 dark:text-gray-400 flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-right">
+                    <path d="m6 17 5-5-5-5" />
+                    <path d="m13 17 5-5-5-5" />
+                </svg>
+                Lorem ipsum dolor sit amet
+            </p>
+            <p class="text-gray-500 dark:text-gray-400 flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-right">
+                    <path d="m6 17 5-5-5-5" />
+                    <path d="m13 17 5-5-5-5" />
+                </svg>
+                Lorem ipsum dolor sit amet
+            </p>
+            <p class="text-gray-500 dark:text-gray-400 flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-right">
+                    <path d="m6 17 5-5-5-5" />
+                    <path d="m13 17 5-5-5-5" />
+                </svg>
+                Lorem ipsum dolor sit amet
+            </p>
+            <p class="text-gray-500 dark:text-gray-400 flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-right">
+                    <path d="m6 17 5-5-5-5" />
+                    <path d="m13 17 5-5-5-5" />
+                </svg>
+                Lorem ipsum dolor sit amet
+            </p>
         </div>
         <div class="w-1/2 font-semibold block p-6 bg-white border border-gray-200 rounded-lg dark:border-gray-700 dark:hover:bg-gray-700">
             <div>

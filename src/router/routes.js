@@ -19,7 +19,9 @@ const Layouts = () => import('@/views/forms/layouts/index.vue')
 const Invoice = () => import('@/views/invoice/Index.vue')
 
 // Calander ====================================================================
+
 const calander = () => import('@/views/Calander/Index.vue')
+
 // Board =======================================================================
 const Board = () => import('@/views/Board/Index.vue')
 
@@ -59,6 +61,14 @@ const card = () => import('@/views/Card/Index.vue')
 const BasicCard = () => import('@/views/Card/Basic Card/Index.vue')
 const ThemesCard = () => import('@/views/Card/Themes Cards/Index.vue')
 const Draggable_Card = () => import('@/views/Card/Draggable Card/Index.vue')
+// =======================pages========================
+const Login = () => import('@/views/pages/login/Index.vue')
+const Register = () => import('@/views/pages/register/Index.vue')
+const Error = () => import('@/views/pages/error 404/Index.vue')
+const Error500 = () => import('@/views/pages/error 500/Index.vue')
+const Forgetpassword = () => import('@/views/pages/forget password/Index.vue')
+const Gallery = () => import('@/views/pages/gallery/Index.vue')
+// const ThemesCard = () => import('@/views/Card/Themes Card/Index.vue')
 
 export default [
     {
@@ -154,6 +164,11 @@ export default [
             },
 
             // ================ calander ===========
+            // {
+            //     path: '/Calendar',
+            //     name: 'app.Calendar',
+            //     component: Calendar
+            // },
             {
                 path: '/calander',
                 name: 'app.calander',
@@ -309,6 +324,11 @@ export default [
                 name: 'app.BasicCard',
                 component: BasicCard
             },
+            // {
+            //     path: '/ThemesCard',
+            //     name: 'app.ThemesCard',
+            //     component: ThemesCard
+            // },
             {
                 path: '/ThemesCard',
                 name: 'app.ThemesCard',
@@ -318,7 +338,38 @@ export default [
                 path: '/DraggableCard',
                 name: 'app.DraggableCard',
                 component: Draggable_Card
-            }
+            },
+        //  ===================pages========================
+            {
+                path: '/pages/login',
+                name: 'app.pages.login',
+                component: Login
+            },
+            {
+                path: '/register',
+                name: 'app.pages.register',
+                component: Register
+            },
+            {
+                path: '/error 404',
+                name: 'app.pages.error 404',
+                component: Error
+            },
+            {
+                path: '/error 500',
+                name: 'app.pages.error 500',
+                component: Error500
+            },
+            {
+                path: '/forget password',
+                name: 'app.pages.forget password',
+                component: Forgetpassword
+            },
+            {
+                path: '/gallery',
+                name: 'app.pages.gallery',
+                component: Gallery
+            },
         ]
     }
 ]

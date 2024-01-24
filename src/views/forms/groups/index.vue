@@ -1,8 +1,8 @@
 <template>
-    <section class="w-full p-4 bg-gray-100 border border-gray-200 shadow sm:p-6 md:p-8 dark:border-gray-700">
-        <div class="flex gap-3 mb-2">
+    <section class="w-full grid grid-rows p-4 bg-gray-100 border border-gray-200 shadow sm:p-6 md:p-8 dark:border-gray-700">
+        <div class="grid gap-2 md:grid-cols-1 lg:grid-cols-2">
             <!-- ================================================== Input Groups ====================================== -->
-            <div class="container py-8 px-4 bg-white w-1/2 h-auto shadow-xl">
+            <div class="container py-8 px-4 bg-white w-full h-auto shadow-xl">
                 <form action="">
                     <h1 class="text-nowrap font-medium text-gray-900 mb-5" id="slide-over-title">Input Groups</h1>
                     <label class="flex flex-col mb-6">
@@ -67,7 +67,7 @@
             </div>
 
             <!-- ============================================= Buttons with dropdowns ======================================================= -->
-            <div class="container py-8 px-4 bg-white w-1/2 h-auto shadow-xl">
+            <div class="container py-8 px-4 bg-white w-full h-auto shadow-xl">
                 <form action="" class=" ">
                     <h1 class="text-nowrap font-medium text-gray-900 mb-5" id="slide-over-title">Buttons with dropdowns</h1>
                     <label class="flex flex-col mt-6 text-start gap-1">
@@ -154,8 +154,8 @@
         </div>
 
         <!-- ========================================================  Custom select ================================================================= -->
-        <div class="flex gap-3 mt-4">
-            <div class="container py-8 px-4 bg-white w-1/2 h-auto shadow-xl">
+        <div class="grid gap-2 md:grid-cols-1 lg:grid-cols-2">
+            <div class="container py-8 px-4 bg-white w-full h-auto shadow-xl">
                 <form action="" class=" ">
                     <h1 class="text-nowrap font-medium text-gray-900 mb-5" id="slide-over-title">Custom select</h1>
                     <label class="flex flex-col mt-6 text-start gap-1">
@@ -220,7 +220,7 @@
             </div>
 
             <!-- =========================================== Custom file input ============================================= -->
-            <div class="container py-8 px-4 bg-white w-1/2 h-auto shadow-xl">
+            <div class="container py-8 px-4 bg-white w-full h-auto shadow-xl">
                 <form action="" class=" ">
                     <h1 class="text-nowrap font-medium text-gray-900 mb-5" id="slide-over-title">Custom file input</h1>
                     <label class="flex flex-col mt-6 text-start gap-1">
