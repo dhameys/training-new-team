@@ -45,6 +45,11 @@ const Checkout = () => import('@/views/product/Checkout/Index.vue')
 const icon = () => import('@/views/icon/Index.vue')
 const fontawesomeicon = () => import('@/views/icon/fontawesome  icon/Index.vue')
 const themefyicon = () => import('@/views/icon/themefy  icon/Index.vue')
+// Animations =========================================================
+const Animations = () => import('@/views/Animations/Index.vue')
+const Animate = () => import('@/views/Animations/Animate/Index.vue')
+const ScrollReveal = () => import('@/views/Animations/Scroll Reveal/Index.vue')
+const TiltAnimation = () => import('@/views/Animations/Tilt Animation/Index.vue')
 // Table ==============================================================
 const Table = () => import('@/views/Table/Index.vue')
 const DataTable = () => import('@/views/Table/Data Table/Index.vue')
@@ -254,6 +259,27 @@ export default [
                 path: '/themefyicons',
                 name: 'app.themefyicons',
                 component: themefyicon
+            },
+            // ========================= Animations ========================
+            {
+                path: '/Animations',
+                name: 'app.Animations',
+                component: Animations
+            },
+            {
+                path: '/Animate',
+                name: 'app.Animate',
+                component: Animate
+            },
+            {
+                path: '/ScrollReveal',
+                name: 'app.ScrollReveal',
+                component: ScrollReveal
+            },
+            {
+                path: '/TiltAnimation',
+                name: 'app.TiltAnimation',
+                component : TiltAnimation
             },
 
             // ========================== Table =============================
