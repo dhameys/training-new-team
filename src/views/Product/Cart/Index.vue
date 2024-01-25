@@ -1,9 +1,9 @@
 <template>
-  
+  <div class="h-64 bg-red-100 sm:bg-blue-500 md:bg-green-700">
     <div class="flex items-center justify-center py-8">
         <button onclick="checkoutHandler(false)" class="py-2 px-10 rounded bg-indigo-600 hover:bg-indigo-700 text-white">Open Modal</button>
     </div>
-    <div class="w-full h-full bg-black dark:bg-gray-900 bg-opacity-90 top-0 overflow-y-auto overflow-x-hidden fixed sticky-0" id="chec-div">
+    <div class="">
         <div class="w-full absolute z-10 right-0 h-full overflow-x-hidden transform translate-x-0 transition ease-in-out duration-700" id="checkout">
             <div class="flex items-end lg:flex-row flex-col justify-end" id="cart">
                 <div class="lg:w-1/2 md:w-8/12 w-full lg:px-8 lg:py-14 md:px-6 px-4 md:py-8 py-4 bg-white dark:bg-gray-800 overflow-y-hidden overflow-x-hidden lg:h-screen h-auto" id="scroll">
@@ -126,7 +126,7 @@
        
     </div>
   
-  
+  </div>
 
 </template>
 
