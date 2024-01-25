@@ -9,7 +9,7 @@
     >
         <div class="h-full px-3 pb-4 overflow-y-auto">
             <ul class="space-y-2 font-medium">
-                <!-- =========================dashboard================================ -->
+                <!-- ========================= dashboard =======================-->
                 <li>
                     <button @click="openList('dashboard')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
@@ -32,18 +32,18 @@
                             Dashboard
                         </div>
                         <span>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
-                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'dashboard' }"
-                                >
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                                </svg>
-                            </span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
+                                :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'dashboard' }"
+                            >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </span>
                     </button>
 
                     <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
@@ -124,7 +124,7 @@
                     </transition>
                 </li>
 
-                <!-- ========================app======================================= -->
+                <!-- ======================== app ==============================-->
                 <li>
                     <button @click="openList('App')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
@@ -255,7 +255,7 @@
                     </transition>
                 </li>
 
-                <!--=========================ui kits ==================================-->
+                <!--=========================ui kits =========================-->
                 <li>
                     <button @click="openList('ui-kits')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
@@ -531,7 +531,7 @@
                     </transition>
                 </li>
 
-                <!-- =========================== FORMS ===============================-->
+                <!-- =========================== FORMS ========================-->
                 <li>
                     <button @click="openList('forms')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
@@ -544,18 +544,18 @@
                             <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone" :class="{ 'dark:text-dark-primary text-primary ': list === 'forms', 'md:!block': isSidebar }">Forms</span>
                         </div>
                         <span>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
-                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'forms' }"
-                                >
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                                </svg>
-                            </span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
+                                :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'forms' }"
+                            >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </span>
                     </button>
 
                     <!-- Dropdown menu -->
@@ -661,7 +661,7 @@
                     </transition>
                 </li>
 
-                <!-- ================================== Board ========================= -->
+                <!-- ========================== Board ==========================-->
                 <li @click="active">
                     <router-link :to="{ name: 'app.Board' }" @click="openList('Board')" class="router-links transition flex items-center p-2 rounded-lg">
                         <div class="flex">
@@ -677,7 +677,7 @@
                     </router-link>
                 </li>
 
-                <!-- ==========================================  invoice =============== -->
+                <!-- ======================== invoice ===========================-->
                 <li @click="active">
                     <router-link :to="{ name: 'app.invoice' }" @click="openList('invoices')" class="router-links transition flex items-center p-2 rounded-lg">
                         <div class="flex">
@@ -703,7 +703,7 @@
                     </router-link>
                 </li>
 
-                <!-- ==========================================  calander ============= -->
+                <!-- =======================  calander ===========================-->
                 <li @click="active">
                     <router-link :to="{ name: 'app.calander' }" @click="openList('calander')" class="router-links transition flex items-center p-2 rounded-lg">
                         <div class="flex">
@@ -729,7 +729,7 @@
                     </router-link>
                 </li>
 
-                <!-- ==========================products================================= -->
+                <!-- ==========================products===================== -->
                 <li>
                     <button @click="openList('Product')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
@@ -859,7 +859,192 @@
                     </transition>
                 </li>
 
-                <!-- ================================= Tables ==========================-->
+                <!-- ============================ Icons =================================-->
+                <li>
+                    <button @click="openList('icons')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
+                        <div class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card">
+                                <rect width="20" height="14" x="2" y="5" rx="2" />
+                                <line x1="2" x2="22" y1="10" y2="10" />
+                            </svg>
+
+                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone" :class="{ 'dark:text-dark-primary text-primary ': list === 'icnos', 'md:!block': isSidebar }">icons</span>
+                        </div>
+                        <div>
+                            <span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
+                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'icons' }"
+                                >
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </span>
+                        </div>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
+                        <div v-if="list === 'icons'" id="dropdown" class="z-10 w-full">
+                            <ul class="py-2 text-sm text-darkone dark:text-dark-darkone">
+                                <!-- ======== fontawesome icons =========== -->
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.fontawesomeicons' }" href="#" @click="activeLink('fontawesomeicon')" :class="{ 'text-primary ': links == 'fontawesomeicon' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'fontawesomeicon', 'md:!block': isSidebar }"
+                                                >fontawesome icons</span
+                                            >
+                                        </div>
+                                    </router-link>
+                                </li>
+                                <!-- =================================================  themefy icons  ========================================================= -->
+
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.themefyicons' }" href="#" @click="activeLink('themefyicon')" :class="{ 'text-primary ': links == 'themefyicon' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'themefyicon', 'md:!block': isSidebar }">themfy icons</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+                            </ul>
+                        </div>
+                    </transition>
+                </li>
+
+                <!-- ==========================Animations================================= -->
+                <li>
+                    <button @click="openList('Animations')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
+                        <div class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-left"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg>
+
+                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone" :class="{ 'dark:text-dark-primary text-primary ': list === 'Animations', 'md:!block': isSidebar }">Animations</span>
+                        </div>
+                        <div>
+                            <span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
+                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'Animations' }"
+                                >
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </span>
+                        </div>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
+                        <div v-if="list === 'Animations'" id="dropdown" class="z-10 w-full">
+                            <ul class="py-2 text-sm text-darkone dark:text-dark-darkone">
+                                <!--Product-->
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.Animate' }" href="#" @click="activeLink('Animate')" :class="{ 'text-primary ': links == 'Animate' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'Animate', 'md:!block': isSidebar }">Animate</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+
+                                <!--Scroll Reveal-->
+
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.ScrollReveal' }" href="#" @click="activeLink('ScrollReveal')" :class="{ 'text-primary ': links == 'ScrollReveal' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'ScrollReveal', 'md:!block': isSidebar }">ScrollReveal</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+                                <!--Tilt Animation-->
+
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.TiltAnimation' }" href="#" @click="activeLink('TiltAnimation')" :class="{ 'text-primary ': links == 'TiltAnimation' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'TiltAnimation', 'md:!block': isSidebar }">Tilt Animation</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+                            </ul>
+                        </div>
+                    </transition>
+                </li>
+
+                <!-- ================================= Tables ==============-->
                 <li>
                     <button @click="openList('Table')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
@@ -943,7 +1128,7 @@
                     </transition>
                 </li>
 
-                <!-- ============================ cards =================================-->
+                <!-- ============================ cards ====================-->
                 <li>
                     <button @click="openList('card')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
@@ -1230,7 +1415,91 @@
                     </transition>
                 </li>
 
-                <!-- ========================reports================================== -->
+                <!-- ==========================widgets================= -->
+                <li>
+                    <button @click="openList('widgets')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
+                        <div class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ruler">
+                                <path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z" />
+                                <path d="m14.5 12.5 2-2" />
+                                <path d="m11.5 9.5 2-2" />
+                                <path d="m8.5 6.5 2-2" />
+                                <path d="m17.5 15.5 2-2" />
+                            </svg>
+
+                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone" :class="{ 'dark:text-dark-primary text-primary ': list === 'widgets', 'md:!block': isSidebar }">widgets</span>
+                        </div>
+                        <div>
+                            <span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
+                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'widgets' }"
+                                >
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </span>
+                        </div>
+                    </button>
+                    <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
+                        <div v-if="list === 'widgets'" id="dropdown" class="z-10 w-full">
+                            <ul class="py-2 text-sm text-darkone dark:text-dark-darkone">
+                                <!-- login -->
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.widgets.chart-boxes' }" href="#" @click="activeLink('chart boxes')" :class="{ 'text-primary ': links == 'chart boxes' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'chart boxes', 'md:!block': isSidebar }">chart boxes</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+
+                                <!--profile -->
+
+                                <li id="li2">
+                                    <router-link :to="{ name: 'app.widgets.profile' }" href="#" @click="activeLink('profile')" :class="{ 'text-primary ': links == 'profile' }" class="block px-4 py-2 rounded-lg mx-2">
+                                        <div class="flex items-center gap-3 cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="stroke-1.5 w-[14px] h-[14px] text-[13px] text-lightDark dark:text-comment"
+                                            >
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                            </svg>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'profile', 'md:!block': isSidebar }">profile</span>
+                                        </div>
+                                    </router-link>
+                                </li>
+                            </ul>
+                        </div>
+                    </transition>
+                </li>
+
+                <!-- ========================reports==================== -->
                 <li @click="active">
                     <router-link :to="{ name: 'app.dashboard' }" @click="openList('reports')" class="router-links transition flex items-center p-2 rounded-lg">
                         <div class="flex">
