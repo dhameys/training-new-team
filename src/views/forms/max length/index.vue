@@ -1,7 +1,7 @@
 <template>
     <section class="w-full relative p-4 bg-gray-100 border border-gray-200 shadow sm:p-6 md:p-8 dark:border-gray-700">
-        <div class="flex gap-3 mb-2">
-            <div class="container py-8 px-4 bg-white w-1/2 h-auto shadow-xl">
+        <div class="grid grid-cols-1 xxl:grid-cols-2 gap-3 mb-2">
+            <div class="container py-8 px-4 bg-white w-full h-auto shadow-xl">
                 <form action="">
                     <h1 class="text-nowrap font-normal text-gray-900 mb-4" id="slide-over-title">Default Usage</h1>
                     <label class="flex flex-col mb-4">
@@ -12,7 +12,7 @@
                     </label>
                 </form>
             </div>
-            <div class="container py-8 px-4 bg-white w-1/2 h-auto shadow-xl">
+            <div class="container py-8 px-4 bg-white w-full h-auto shadow-xl">
                 <form action="">
                     <h1 class="text-nowrap font-normal text-gray-900 mb-4" id="slide-over-title">Threshold Value</h1>
                     <label class="flex flex-col mb-4">
@@ -24,8 +24,8 @@
                 </form>
             </div>
         </div>
-        <div class="flex gap-3 mb-2">
-            <div class="container py-8 px-4 bg-white w-1/2 h-auto shadow-xl">
+        <div class="grid grid-cols-1 xxl:grid-cols-2 gap-3 mb-2">
+            <div class="container py-8 px-4 bg-white w-full h-auto shadow-xl">
                 <form action="">
                     <h1 class="text-nowrap font-normal text-gray-900 mb-4" id="slide-over-title">All the Options</h1>
                     <label class="flex flex-col mb-4">
@@ -36,7 +36,7 @@
                     </label>
                 </form>
             </div>
-            <div class="container py-8 px-4 bg-white w-1/2 h-auto shadow-xl">
+            <div class="container py-8 px-4 bg-white w-full h-auto shadow-xl">
                 <form action="">
                     <h1 class="text-nowrap font-normal text-gray-900 mb-4" id="slide-over-title">Positions</h1>
                     <label class="flex flex-col mb-4">
