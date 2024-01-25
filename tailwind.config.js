@@ -51,8 +51,14 @@ export default {
           success: '#57b157',
           danger: '#d54b47',
           update: '#ffb300'
-        }
+        },
+        
       },
+      screens: {
+        'xl': '640px',
+        'xxl': '1025px',
+        'desktop': '1280px',
+    },
     },
   },
   plugins: [
@@ -63,7 +69,8 @@ export default {
     require('@tailwindcss/typography'),
 
   ],
-  darkMode: "class"
+  darkMode: "class",
+  
 
 }
 

@@ -4,8 +4,8 @@
         <SideBar :class="{ 'translate-x-0': opensidebarsm, 'lg:w-[250px]': opensidebarlg }"> </SideBar>
     </div>
 
-    <div class="print:px-0 print:m-0 print:mr-8 px-6  mt-[56px] lg:!mt-20 mb-16 print:shadow-none print:border-none" :class="{ 'md:ml-[80px] ': opensidebarmd, 'lg:ml-[250px] ': opensidebarlg }">
-        <div class="overflow-scroll h-[560px] w-full rounded-lg relative transition-all duration-500 px-0.5 lg:px-1 border print:px-0 print:ml-0 print:shadow-none print:border-none">
+    <div class="print:px-0 print:m-0 print:mr-8 px-6 mt-[56px] lg:!mt-20 mb-16 print:shadow-none print:border-none" :class="{ 'md:ml-[80px] ': opensidebarmd, 'lg:ml-[250px] ': opensidebarlg }">
+        <div class="overflow-scroll h-[760px] w-full rounded-lg relative transition-all duration-500 px-0.5 lg:px-1 border print:px-0 print:ml-0 print:shadow-none print:border-none">
             <router-view> </router-view>
         </div>
     </div>
