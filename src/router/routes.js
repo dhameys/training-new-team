@@ -68,7 +68,9 @@ const Error = () => import('@/views/pages/error 404/Index.vue')
 const Error500 = () => import('@/views/pages/error 500/Index.vue')
 const Forgetpassword = () => import('@/views/pages/forget password/Index.vue')
 const Gallery = () => import('@/views/pages/gallery/Index.vue')
-// const ThemesCard = () => import('@/views/Card/Themes Card/Index.vue')
+// =====================WIDGET====================
+const Chart_boxes = () => import('@/views/widgets/chart boxes/Index.vue')
+const Profile = () => import('@/views/widgets/profile/Index.vue')
 
 export default [
     {
@@ -361,14 +363,25 @@ export default [
                 component: Error500
             },
             {
-                path: '/forget password',
+                path: '/forget-password',
                 name: 'app.pages.forget password',
                 component: Forgetpassword
             },
             {
-                path: '/gallery',
+                path: 'pages/gallery',
                 name: 'app.pages.gallery',
                 component: Gallery
+            },
+            // =================widgets===========
+            {
+                path: 'widgets/chart-boxes',
+                name: 'app.widgets.chart-boxes',
+                component: Chart_boxes
+            },
+            {
+                path: '/profile',
+                name: 'app.widgets.profile',
+                component: Profile
             },
         ]
     }

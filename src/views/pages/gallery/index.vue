@@ -9,7 +9,7 @@
         <div class="bg-gray-200 border border-gray-200 rounded-lg shadow mb-5">
             <!-- TW Elements is free un der AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com -->
             <div class="container w-full px-5 py-5 mb-3">
-                <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-2">
+                <div class="min-w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                     <div class="w-full p-1">
                         <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center" src="/image/1.jpg" />
                     </div>
