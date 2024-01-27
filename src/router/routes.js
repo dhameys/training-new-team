@@ -52,6 +52,15 @@ const Animations = () => import('@/views/Animations/Index.vue')
 const Animate = () => import('@/views/Animations/Animate/Index.vue')
 const ScrollReveal = () => import('@/views/Animations/Scroll Reveal/Index.vue')
 const TiltAnimation = () => import('@/views/Animations/Tilt Animation/Index.vue')
+// Components =========================================================
+const Components = () => import('@/views/Components/Index.vue')
+const Accordions = () => import('@/views/Components/Accordions/Index.vue')
+const Scrollable = () => import('@/views/Components/Scrollable/Index.vue')
+const Carousel = () => import('@/views/Components/Carousel/Index.vue')
+const Notifications = () => import('@/views/Components/Notifications/Index.vue')
+const Pagination = () => import('@/views/Components/Pagination/Index.vue')
+
+
 // Table ==============================================================
 const Table = () => import('@/views/Table/Index.vue')
 const DataTable = () => import('@/views/Table/Data Table/Index.vue')
@@ -297,6 +306,37 @@ export default [
                 path: '/TiltAnimation',
                 name: 'app.TiltAnimation',
                 component : TiltAnimation
+            },
+            // ========================= Components ========================
+            {
+                path: '/Components',
+                name: 'app.Components',
+                component: Components
+            },
+            {
+                path: '/Accordions',
+                name: 'app.Accordions',
+                component: Accordions
+            },
+            {
+                path: '/Scrollable',
+                name: 'app.Scrollable',
+                component: Scrollable
+            },
+            {
+                path: '/Notifications',
+                name: 'app.Notifications',
+                component : Notifications
+            },
+            {
+                path: '/Carousel',
+                name: 'app.Carousel',
+                component : Carousel
+            },
+            {
+                path: '/Pagination',
+                name: 'app.Pagination',
+                component : Pagination
             },
 
             // ========================== Table =============================
