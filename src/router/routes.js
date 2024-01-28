@@ -277,34 +277,34 @@ export default [
                 component: icon
             },
             {
-                path: '/fontawesomeicons',
-                name: 'app.fontawesomeicons',
+                path: '/icon/fontawesomeicons',
+                name: 'app.icon.fontawesomeicons',
                 component: fontawesomeicon
             },
             {
-                path: '/themefyicons',
-                name: 'app.themefyicons',
+                path: '/icon/themefyicons',
+                name: 'app.icon.themefyicons',
                 component: themefyicon
             },
             // ========================= Animations ========================
             {
-                path: '/Animations',
-                name: 'app.Animations',
+                path: '/animations',
+                name: 'app.animations',
                 component: Animations
             },
             {
-                path: '/Animate',
-                name: 'app.Animate',
+                path: '/Animation/Animate',
+                name: 'app.Animations.Animate',
                 component: Animate
             },
             {
-                path: '/ScrollReveal',
-                name: 'app.ScrollReveal',
+                path: '/Animation/ScrollReveal',
+                name: 'app.Animation.ScrollReveal',
                 component: ScrollReveal
             },
             {
-                path: '/TiltAnimation',
-                name: 'app.TiltAnimation',
+                path: '/Animations/TiltAnimation',
+                name: 'app.Animations.TiltAnimation',
                 component : TiltAnimation
             },
             // ========================= Components ========================

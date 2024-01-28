@@ -889,7 +889,7 @@
                             <ul class="py-2 text-sm text-darkone dark:text-dark-darkone">
                                 <!--  fontawesome icons -->
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.fontawesomeicons' }" href="#" @click="activeLink('fontawesomeicon')" :class="{ 'text-primary ': links == 'fontawesomeicon' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.icon.fontawesomeicons' }" href="#" @click="activeLink('fontawesomeicon')" :class="{ 'text-primary ': links == 'fontawesomeicon' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -914,7 +914,7 @@
                                 <!--  themefy icons -->
 
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.themefyicons' }" href="#" @click="activeLink('themefyicon')" :class="{ 'text-primary ': links == 'themefyicon' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.icon.themefyicons' }" href="#" @click="activeLink('themefyicon')" :class="{ 'text-primary ': links == 'themefyicon' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -974,7 +974,7 @@
                             <ul class="py-2 text-sm text-darkone dark:text-dark-darkone">
                                 <!--Product-->
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.Animate' }" href="#" @click="activeLink('Animate')" :class="{ 'text-primary ': links == 'Animate' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.Animations.Animate' }" href="#" @click="activeLink('Animate')" :class="{ 'text-primary ': links == 'Animate' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -998,7 +998,7 @@
                                 <!--Scroll Reveal-->
 
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.ScrollReveal' }" href="#" @click="activeLink('ScrollReveal')" :class="{ 'text-primary ': links == 'ScrollReveal' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.Animation.ScrollReveal' }" href="#" @click="activeLink('ScrollReveal')" :class="{ 'text-primary ': links == 'ScrollReveal' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -1021,7 +1021,7 @@
                                 <!--Tilt Animation-->
 
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.TiltAnimation' }" href="#" @click="activeLink('TiltAnimation')" :class="{ 'text-primary ': links == 'TiltAnimation' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.Animations.TiltAnimation' }" href="#" @click="activeLink('TiltAnimation')" :class="{ 'text-primary ': links == 'TiltAnimation' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
