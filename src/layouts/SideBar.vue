@@ -156,7 +156,7 @@
                     <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
                         <div v-if="list === 'App'" id="dropdown" class="z-10 w-full">
                             <ul class="py-2 text-sm text-darkone dark:text-dark-darkone">
-                                <!-- ====================================== Editor =============================== -->
+                                <!-- Editor -->
                                 <li id="li2">
                                     <router-link :to="{ name: 'app.editor' }" href="#" @click="activeLink('Editor')" :class="{ 'text-primary ': links == 'Editor' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
@@ -179,7 +179,7 @@
                                     </router-link>
                                 </li>
 
-                                <!-- =================== Mail Box =================== -->
+                                <!-- Mail Box-->
 
                                 <li id="li2">
                                     <router-link :to="{ name: 'app.mail' }" href="#" @click="activeLink('Mail')" :class="{ 'text-primary ': links == 'groups' }" class="block px-4 py-2 rounded-lg mx-2">
@@ -203,7 +203,7 @@
                                     </router-link>
                                 </li>
 
-                                <!-- ============================================ chat =================================================-->
+                                <!--  chat -->
 
                                 <li id="li2">
                                     <router-link :to="{ name: 'app.Chat' }" href="#" @click="activeLink('Chat')" :class="{ 'text-primary ': links == 'Chat' }" class="block px-4 py-2 rounded-lg mx-2">
@@ -226,7 +226,7 @@
                                         </div>
                                     </router-link>
                                 </li>
-                                <!-- =================================================  FAQ  ========================================================= -->
+                                <!-- FAQ -->
 
                                 <li id="li2">
                                     <router-link :to="{ name: 'app.FAQ' }" href="#" @click="activeLink('FAQ')" :class="{ 'text-primary ': links == 'Checkout' }" class="block px-4 py-2 rounded-lg mx-2">
@@ -249,7 +249,6 @@
                                         </div>
                                     </router-link>
                                 </li>
-                                <!-- ===================== END FAQ ======================= -->
                             </ul>
                         </div>
                     </transition>
@@ -665,12 +664,10 @@
                 <li @click="active">
                     <router-link :to="{ name: 'app.Board' }" @click="openList('Board')" class="router-links transition flex items-center p-2 rounded-lg">
                         <div class="flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-codepen">
-                                <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2" />
-                                <line x1="12" x2="12" y1="22" y2="15.5" />
-                                <polyline points="22 8.5 12 15.5 2 8.5" />
-                                <polyline points="2 15.5 12 8.5 22 15.5" />
-                                <line x1="12" x2="12" y1="2" y2="8.5" />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-alert-triangle">
+                                <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+                                <path d="M12 9v4" />
+                                <path d="M12 17h.01" />
                             </svg>
                             <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone ml-3" :class="{ 'dark:text-dark-primary text-primary ': list == 'Board', 'md:!block': isSidebar }">Board </span>
                         </div>
@@ -729,7 +726,7 @@
                     </router-link>
                 </li>
 
-                <!-- ==========================products===================== -->
+                <!-- ==========================products====================== -->
                 <li>
                     <button @click="openList('Product')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
@@ -859,7 +856,7 @@
                     </transition>
                 </li>
 
-                <!-- ============================ Icons =================================-->
+                <!-- ============================ Icons =====================-->
                 <li>
                     <button @click="openList('icons')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
@@ -890,7 +887,7 @@
                     <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
                         <div v-if="list === 'icons'" id="dropdown" class="z-10 w-full">
                             <ul class="py-2 text-sm text-darkone dark:text-dark-darkone">
-                                <!-- ======== fontawesome icons =========== -->
+                                <!--  fontawesome icons -->
                                 <li id="li2">
                                     <router-link :to="{ name: 'app.fontawesomeicons' }" href="#" @click="activeLink('fontawesomeicon')" :class="{ 'text-primary ': links == 'fontawesomeicon' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
@@ -914,7 +911,7 @@
                                         </div>
                                     </router-link>
                                 </li>
-                                <!-- =================================================  themefy icons  ========================================================= -->
+                                <!--  themefy icons -->
 
                                 <li id="li2">
                                     <router-link :to="{ name: 'app.themefyicons' }" href="#" @click="activeLink('themefyicon')" :class="{ 'text-primary ': links == 'themefyicon' }" class="block px-4 py-2 rounded-lg mx-2">
@@ -942,11 +939,16 @@
                     </transition>
                 </li>
 
-                <!-- ==========================Animations================================= -->
+                <!-- ==========================Animations======================== -->
                 <li>
                     <button @click="openList('Animations')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-left"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-left">
+                                <path d="m16 3 4 4-4 4" />
+                                <path d="M20 7H4" />
+                                <path d="m8 21-4-4 4-4" />
+                                <path d="M4 17h16" />
+                            </svg>
 
                             <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone" :class="{ 'dark:text-dark-primary text-primary ': list === 'Animations', 'md:!block': isSidebar }">Animations</span>
                         </div>
@@ -1229,7 +1231,7 @@
                     <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
                         <div v-if="list === 'Table'" id="dropdown" class="z-10 w-full">
                             <lu class="py-2 text-sm text-darkone dark:text-dark-darkone">
-                                <!-- ======== DataTable =========== -->
+                                <!-- DataTable -->
                                 <li id="li2">
                                     <router-link :to="{ name: 'app.DataTable' }" href="#" @click="activeLink('DataTable')" :class="{ 'text-primary ': links == 'DataTable' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
