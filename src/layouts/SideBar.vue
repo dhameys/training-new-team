@@ -1200,7 +1200,7 @@
 
                 <!-- ================================= Tables ==============-->
                 <li>
-                    <button @click="openList('Table')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
+                    <button @click="openList('table')" type="button" class="w-full flex items-center justify-between p-2 text-darkone rounded-lg dark:text-dark-darkone">
                         <div class="flex items-center gap-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-table">
                                 <path d="M12 3v18" />
@@ -1209,7 +1209,7 @@
                                 <path d="M3 15h18" />
                             </svg>
 
-                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone" :class="{ 'dark:text-dark-primary text-primary ': list === 'forms', 'md:!block': isSidebar }">Table</span>
+                            <span class="text-[15px] md:hidden lg:block font-normal text-darkone dark:text-dark-darkone" :class="{ 'dark:text-dark-primary text-primary ': list === 'table', 'md:!block': isSidebar }">Table</span>
                         </div>
                         <div>
                             <span>
@@ -1220,7 +1220,7 @@
                                     stroke-width="1.5"
                                     stroke="currentColor"
                                     class="w-[14px] h-[14px] text-darksecondaryark:text-dark-darkone transform transition-transform duration-300 ease-in-out"
-                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'Table' }"
+                                    :class="{ 'dark:text-dark-primary text-primary  rotate-90': list === 'table' }"
                                 >
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                                 </svg>
@@ -1229,11 +1229,11 @@
                     </button>
                     <!-- Dropdown menu -->
                     <transition @enter="enter" @after-enter="afterEnter" @leave="leave" name="expand">
-                        <div v-if="list === 'Table'" id="dropdown" class="z-10 w-full">
+                        <div v-if="list === 'table'" id="dropdown" class="z-10 w-full">
                             <lu class="py-2 text-sm text-darkone dark:text-dark-darkone">
                                 <!-- DataTable -->
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.DataTable' }" href="#" @click="activeLink('DataTable')" :class="{ 'text-primary ': links == 'DataTable' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.table.DataTable' }" href="#" @click="activeLink('DataTable')" :class="{ 'text-primary ': links == 'DataTable' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -1257,7 +1257,7 @@
                                 <!-- =================== bootstrap=================== -->
 
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.bootstrap' }" href="#" @click="activeLink('groups')" :class="{ 'text-primary ': links == 'bootstrap' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.table.bootstrap' }" href="#" @click="activeLink('bootstrap')" :class="{ 'text-primary ': links == 'bootstrap' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -1315,7 +1315,7 @@
                             <ul class="py-2 text-sm text-darkone dark:text-dark-darkone">
                                 <!-- ======== Basic Card =========== -->
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.BasicCard' }" href="#" @click="activeLink('BasicCard')" :class="{ 'text-primary ': links == 'BasicCard' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.card.BasicCard' }" href="#" @click="activeLink('basicCard')" :class="{ 'text-primary ': links == 'basicCard' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -1331,7 +1331,7 @@
                                             >
                                                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                                             </svg>
-                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'BasicCard', 'md:!block': isSidebar }">Basic Card</span>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'basicCard', 'md:!block': isSidebar }">Basic Card</span>
                                         </div>
                                     </router-link>
                                 </li>
@@ -1339,7 +1339,7 @@
                                 <!-- =================== Themes Card =================== -->
 
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.ThemesCard' }" href="#" @click="activeLink('ThemesCard')" :class="{ 'text-primary ': links == 'ThemesCard' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.card.ThemesCard' }" href="#" @click="activeLink('themesCard')" :class="{ 'text-primary ': links == 'themesCard' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -1355,7 +1355,7 @@
                                             >
                                                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                                             </svg>
-                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'ThemesCard', 'md:!block': isSidebar }">Themes Card</span>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'themesCard', 'md:!block': isSidebar }">Themes Card</span>
                                         </div>
                                     </router-link>
                                 </li>
@@ -1363,7 +1363,7 @@
                                 <!-- =================================================  Draggable Card  ========================================================= -->
 
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.DraggableCard' }" href="#" @click="activeLink('Draggable_Card')" :class="{ 'text-primary ': links == 'Draggable_Card' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.card.DraggableCard' }" href="#" @click="activeLink('draggable_Card')" :class="{ 'text-primary ': links == 'draggable_Card' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -1379,7 +1379,7 @@
                                             >
                                                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                                             </svg>
-                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'Draggable_Card', 'md:!block': isSidebar }">Draggable Card</span>
+                                            <span class="md:hidden lg:block capitalize text-xs hover:text-primary dark:hover:text-dark-primary text-lightDark dark:text-comment" :class="{ 'text-primary dark:text-dark-primary': links == 'draggable_Card', 'md:!block': isSidebar }">Draggable Card</span>
                                         </div>
                                     </router-link>
                                 </li>
