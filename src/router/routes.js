@@ -4,11 +4,11 @@ const Default = () => import('@/views/dashboard/default/Index.vue')
 const Darkmenu = () => import('@/views/dashboard/dark menu/Index.vue')
 
 //  App ==============================================================================
-const App = () => import('@/views/App/Index.vue')
-const Editor = () => import('@/views/App/editor/Index.vue')
-const Mail = () => import('@/views/App/mail Box/Index.vue')
-const Chat = () => import('@/views/App/Chat/Index.vue')
-const FAQ = () => import('@/views/App/FAQ/Index.vue')
+const app = () => import('@/views/App/Index.vue')
+const editor = () => import('@/views/App/editor/Index.vue')
+const mail = () => import('@/views/App/mail Box/Index.vue')
+const chat = () => import('@/views/App/Chat/Index.vue')
+const faq = () => import('@/views/App/FAQ/Index.vue')
 // forms ===============================================================================
 const Basicelements = () => import('@/views/forms/basic elements/Index.vue')
 const Groups = () => import('@/views/forms/Groups/Index.vue')
@@ -38,11 +38,11 @@ const Typography = () => import('@/views/ui kits/typography/Index.vue')
 const Date = () => import('@/views/ui kits/date/Index.vue')
 
 // Product ========================================================================
-const Product = () => import('@/views/Product/Index.vue')
-const Products = () => import('@/views/product/Products/Index.vue')
+const product = () => import('@/views/Product/Index.vue')
+const products = () => import('@/views/product/Products/Index.vue')
 const Details = () => import('@/views/product/Product Details/Index.vue')
-const Cart = () => import('@/views/product/Cart/Index.vue')
-const Checkout = () => import('@/views/product/Checkout/Index.vue')
+const cart = () => import('@/views/product/Cart/Index.vue')
+const checkout = () => import('@/views/product/Checkout/Index.vue')
 // Icons =============================================================
 const icon = () => import('@/views/icon/Index.vue')
 const fontawesomeicon = () => import('@/views/icon/fontawesome  icon/Index.vue')
@@ -106,28 +106,28 @@ export default [
             {
                 path: '/app',
                 name: 'app.App',
-                component: App
+                component: app
             },
 
             {
-                path: '/editor',
-                name: 'app.editor',
-                component: Editor
+                path: '/app/editor',
+                name: 'app.app.editor',
+                component: editor
             },
             {
-                path: '/mail',
-                name: 'app.mail',
-                component: Mail
+                path: '/app/mail',
+                name: 'app.app.mail box',
+                component: mail
             },
             {
-                path: '/Chat',
-                name: 'app.Chat',
-                component: Chat
+                path: '/app/chat',
+                name: 'app.app.chat',
+                component: chat
             },
             {
-                path: '/FAQ',
-                name: 'app.FAQ',
-                component: FAQ
+                path: '/app/faq',
+                name: 'app.app.faq',
+                component: faq
             },
             // =====================Forms
 
@@ -246,29 +246,29 @@ export default [
 
             // =============================== product========================================================
             {
-                path: '/Product',
+                path: '/product',
                 name: 'app.Product',
-                component: Product
+                component: product
             },
             {
-                path: '/Products',
-                name: 'app.Products',
-                component: Products
+                path: '/product/products',
+                name: 'app.product.products',
+                component: products
             },
             {
-                path: '/Details',
-                name: 'app.Details',
+                path: '/product/Details',
+                name: 'app.product.Details',
                 component: Details
             },
             {
-                path: '/Cart',
-                name: 'app.Cart',
-                component: Cart
+                path: '/product/Cart',
+                name: 'app.product.Cart',
+                component: cart
             },
             {
-                path: '/Checkout',
-                name: 'app.Checkout',
-                component: Checkout
+                path: '/product/checkout',
+                name: 'app.product.checkout',
+                component: checkout
             },
             // ======================Icons =================================
             {
