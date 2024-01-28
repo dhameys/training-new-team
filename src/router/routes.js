@@ -62,14 +62,14 @@ const Pagination = () => import('@/views/Components/Pagination/Index.vue')
 
 
 // Table ==============================================================
-const Table = () => import('@/views/Table/Index.vue')
+const table = () => import('@/views/Table/Index.vue')
 const DataTable = () => import('@/views/Table/Data Table/Index.vue')
 const bootstrap = () => import('@/views/Table/bootstrap/Index.vue')
 // Card ==========================================================
 const card = () => import('@/views/Card/Index.vue')
-const BasicCard = () => import('@/views/Card/Basic Card/Index.vue')
-const ThemesCard = () => import('@/views/Card/Themes Cards/Index.vue')
-const Draggable_Card = () => import('@/views/Card/Draggable Card/Index.vue')
+const basicCard = () => import('@/views/Card/Basic Card/Index.vue')
+const themesCard = () => import('@/views/Card/Themes Cards/Index.vue')
+const draggable_Card = () => import('@/views/Card/Draggable Card/Index.vue')
 // =======================pages========================
 const Login = () => import('@/views/pages/login/Index.vue')
 const Register = () => import('@/views/pages/register/Index.vue')
@@ -277,34 +277,34 @@ export default [
                 component: icon
             },
             {
-                path: '/fontawesomeicons',
-                name: 'app.fontawesomeicons',
+                path: '/icon/fontawesomeicons',
+                name: 'app.icon.fontawesomeicons',
                 component: fontawesomeicon
             },
             {
-                path: '/themefyicons',
-                name: 'app.themefyicons',
+                path: '/icon/themefyicons',
+                name: 'app.icon.themefyicons',
                 component: themefyicon
             },
             // ========================= Animations ========================
             {
-                path: '/Animations',
-                name: 'app.Animations',
+                path: '/animations',
+                name: 'app.animations',
                 component: Animations
             },
             {
-                path: '/Animate',
-                name: 'app.Animate',
+                path: '/Animation/Animate',
+                name: 'app.Animations.Animate',
                 component: Animate
             },
             {
-                path: '/ScrollReveal',
-                name: 'app.ScrollReveal',
+                path: '/Animation/ScrollReveal',
+                name: 'app.Animation.ScrollReveal',
                 component: ScrollReveal
             },
             {
-                path: '/TiltAnimation',
-                name: 'app.TiltAnimation',
+                path: '/Animations/TiltAnimation',
+                name: 'app.Animations.TiltAnimation',
                 component : TiltAnimation
             },
             // ========================= Components ========================
@@ -314,45 +314,45 @@ export default [
                 component: Components
             },
             {
-                path: '/Accordions',
-                name: 'app.Accordions',
+                path: '/components/Accordions',
+                name: 'app.components.Accordions',
                 component: Accordions
             },
             {
-                path: '/Scrollable',
-                name: 'app.Scrollable',
+                path: '/components/Scrollable',
+                name: 'app.components.Scrollable',
                 component: Scrollable
             },
             {
-                path: '/Notifications',
-                name: 'app.Notifications',
+                path: '/components/Notifications',
+                name: 'app.components.Notifications',
                 component : Notifications
             },
             {
-                path: '/Carousel',
-                name: 'app.Carousel',
+                path: '/components/Carousel',
+                name: 'app.components.Carousel',
                 component : Carousel
             },
             {
-                path: '/Pagination',
-                name: 'app.Pagination',
+                path: '/components/Pagination',
+                name: 'app.components.Pagination',
                 component : Pagination
             },
 
             // ========================== Table =============================
             {
-                path: '/Table',
+                path: '/table',
                 name: 'app.Table',
-                component: Table
+                component: table
             },
             {
-                path: '/DataTable',
-                name: 'app.DataTable',
+                path: '/table/DataTable',
+                name: 'app.table.DataTable',
                 component: DataTable
             },
             {
-                path: '/bootstrap',
-                name: 'app.bootstrap',
+                path: 'table/bootstrap',
+                name: 'app.table.bootstrap',
                 component: bootstrap
             },
             //======================================= Card ========================
@@ -362,9 +362,9 @@ export default [
                 component: card
             },
             {
-                path: '/BasicCard',
-                name: 'app.BasicCard',
-                component: BasicCard
+                path: '/card/BasicCard',
+                name: 'app.card.BasicCard',
+                component: basicCard
             },
             // {
             //     path: '/ThemesCard',
@@ -372,14 +372,14 @@ export default [
             //     component: ThemesCard
             // },
             {
-                path: '/ThemesCard',
-                name: 'app.ThemesCard',
-                component: ThemesCard
+                path: '/card/ThemesCard',
+                name: 'app.card.ThemesCard',
+                component: themesCard
             },
             {
-                path: '/DraggableCard',
-                name: 'app.DraggableCard',
-                component: Draggable_Card
+                path: '/card/DraggableCard',
+                name: 'app.card.DraggableCard',
+                component: draggable_Card
             },
         //  ===================pages========================
             {
