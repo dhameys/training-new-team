@@ -1076,7 +1076,7 @@
                             <ul class="py-2 text-sm text-darkone dark:text-dark-darkone">
                                 <!-- Accordions -->
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.Accordions' }" href="#" @click="activeLink('Accordions')" :class="{ 'text-primary ': links == 'Accordions' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.components.Accordions' }" href="#" @click="activeLink('Accordions')" :class="{ 'text-primary ': links == 'Accordions' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -1100,7 +1100,7 @@
                                 <!--Scrollable-->
 
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.Scrollable' }" href="#" @click="activeLink('Scrollable')" :class="{ 'text-primary ': links == 'Scrollable' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.components.Scrollable' }" href="#" @click="activeLink('Scrollable')" :class="{ 'text-primary ': links == 'Scrollable' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -1124,7 +1124,7 @@
                                 <!--Notifications-->
 
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.Notifications' }" href="#" @click="activeLink('Notifications')" :class="{ 'text-primary ': links == 'Notifications' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.components.Notifications' }" href="#" @click="activeLink('Notifications')" :class="{ 'text-primary ': links == 'Notifications' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -1148,7 +1148,7 @@
                                 <!-- Carousel -->
 
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.Carousel' }" href="#" @click="activeLink('Carousel')" :class="{ 'text-primary ': links == 'Carousel' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.components.Carousel' }" href="#" @click="activeLink('Carousel')" :class="{ 'text-primary ': links == 'Carousel' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -1172,7 +1172,7 @@
                                 <!-- Pagination -->
 
                                 <li id="li2">
-                                    <router-link :to="{ name: 'app.Pagination' }" href="#" @click="activeLink('Pagination')" :class="{ 'text-primary ': links == 'Pagination' }" class="block px-4 py-2 rounded-lg mx-2">
+                                    <router-link :to="{ name: 'app.components.Pagination' }" href="#" @click="activeLink('Pagination')" :class="{ 'text-primary ': links == 'Pagination' }" class="block px-4 py-2 rounded-lg mx-2">
                                         <div class="flex items-center gap-3 cursor-pointer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"

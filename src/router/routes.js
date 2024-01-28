@@ -314,28 +314,28 @@ export default [
                 component: Components
             },
             {
-                path: '/Accordions',
-                name: 'app.Accordions',
+                path: '/components/Accordions',
+                name: 'app.components.Accordions',
                 component: Accordions
             },
             {
-                path: '/Scrollable',
-                name: 'app.Scrollable',
+                path: '/components/Scrollable',
+                name: 'app.components.Scrollable',
                 component: Scrollable
             },
             {
-                path: '/Notifications',
-                name: 'app.Notifications',
+                path: '/components/Notifications',
+                name: 'app.components.Notifications',
                 component : Notifications
             },
             {
-                path: '/Carousel',
-                name: 'app.Carousel',
+                path: '/components/Carousel',
+                name: 'app.components.Carousel',
                 component : Carousel
             },
             {
-                path: '/Pagination',
-                name: 'app.Pagination',
+                path: '/components/Pagination',
+                name: 'app.components.Pagination',
                 component : Pagination
             },
 
