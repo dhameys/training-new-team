@@ -18,7 +18,10 @@
                 <button class="bg-white w-28 h-10 text-xs hover:bg-blue-500 hover:text-white rounded-md text-black">Create report</button>
             </div>
         </div>
-        <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com -->
+
+
+        
+       <canvas id="chart-mixed-example"></canvas>
       
     </div>
 </template>
