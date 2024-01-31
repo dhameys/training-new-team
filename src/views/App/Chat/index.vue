@@ -1,6 +1,17 @@
 <template>
   <!-- component -->
 <!-- This is an example component -->
+<div class="bg-gray-100 h-32 pt-5 pl-5 text-xl text-white font-mono">
+  <h2 class="pt-10 text-black">Chat</h2>
+  <div class="w-auto text-black h-10 grid justify-end pr-5 mb-4">
+      <p>
+          <a href="#">Dashboard</a>|
+          <span>Chat</span>
+         
+      </p>
+  </div>
+</div>
+
 <div class="container mx-auto shadow-lg rounded-lg">
     <!-- headaer -->
 <div class="px-5 py-5 flex justify-between items-center bg-white border-b-2">

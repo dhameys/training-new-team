@@ -1,16 +1,28 @@
 <template>
+    <div class="bg-gray-100 h-32 pt-5 pl-5 text-xl text-white font-mono">
+        <h2 class="pt-10 text-black">FAQ</h2>
+        <div class="w-auto text-black h-10 grid justify-end pr-5 mb-4">
+            <p>
+                <a href="#">Dashboard</a>|
+                <span>Faq</span>
+                
+               
+            </p>
+        </div>
+    </div>
+
  
     <div class="bg-gray-100 dark:bg-gray-900">
         <div class="container mx-auto">
             <div role="article" class="bg-gray-100 dark:bg-gray-900 py-12 md:px-8">
-                <div class="px-4 xl:px-0 py-10">
-                    <div class="flex flex-col lg:flex-row flex-wrap">
-                        <div class="mt-4 lg:mt-0 lg:w-3/5">
+                <div class=" bg-white px-4 xl:px-0 py-10">
+                    <div class=" bg-white flex flex-col lg:flex-row flex-wrap">
+                        <div class=" bg-white mt-4 lg:mt-0 lg:w-3/5">
                             <div>
                                 <h1 class="text-3xl ml-2 lg:ml-0 lg:text-4xl font-bold text-gray-900 dark:text-white tracking-normal lg:w-11/12">Frequently asked questions</h1>
                             </div>
                         </div>
-                        <div class="lg:w-2/5 flex mt-10 ml-2 lg:ml-0 lg:mt-0 lg:justify-end">
+                        <div class=" bg-white lg:w-2/5 flex mt-10 ml-2 lg:ml-0 lg:mt-0 lg:justify-end">
                             <div class="pt-2 relative text-gray-600">
                                 <input class="focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none" type="search" name="search" placeholder="Search" />
                                 <button type="submit" class="focus:ring-2 focus:ring-offset-2 text-gray-600 focus:text-indigo-700 dark:text-indigo-400 focus:rounded-full focus:bg-gray-100 focus:ring-indigo-700 bg-white focus:outline-none absolute right-0 top-0 mt-5 mr-4">
