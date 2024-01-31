@@ -1,4 +1,28 @@
 <template>
+    <div class="bg-white w-full">
+        <div class="bg-[#64C5B1] h-32 pt-5 pl-5 text-xl text-white font-mono">
+            <h2>Dashboard</h2>
+            <p class="text-sm font-thin grid grid-cols-2 absolute">
+                salessa
+                <span
+                    ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6" /></svg
+                ></span>
+            </p>
+            <p class="text-sm font-thin grid grid-cols-2 absolute ml-20">
+                Dashboard
+                <span class="grid grid-cols-2"
+                    ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6" /></svg>sales</span
+                >
+            </p>
+            <div class="w-auto h-10 grid justify-end pr-5 mb-10">
+                <button class="bg-white w-28 h-10 text-xs hover:bg-blue-500 hover:text-white rounded-md text-black">Create report</button>
+            </div>
+        </div>
+
+
+        
+     
+
   
     <div class="flex justify-center items-center 2xl:container 2xl:mx-auto lg:py-16 md:py-12 py-9 px-4 md:px-6 lg:px-20 xl:px-44">
         <div class="flex w-full sm:w-9/12 lg:w-full flex-col lg:flex-row justify-center items-center lg:space-x-10 2xl:space-x-36 space-y-12 lg:space-y-0">
@@ -113,6 +137,9 @@
             </div>
         </div>
     </div>
+    <canvas id="chart-mixed-example"></canvas>
+      
+</div>
   
 
 </template>
