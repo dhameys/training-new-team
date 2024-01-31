@@ -1,4 +1,18 @@
 <template>
+
+
+
+  <div class="bg-gray-100 h-32 pt-5 pl-5 text-xl text-white font-mono">
+        <h2 class="pt-10 text-black">Mail Box</h2>
+        <div class="w-auto text-black h-10 grid justify-end pr-5 mb-4">
+            <p>
+                <a href="#">Dashboard</a>|
+                <span>Mail Box</span>
+                
+               
+            </p>
+        </div>
+    </div>
   <main class="flex w-full h-full shadow-lg rounded-3xl">
     <section class="flex flex-col w-2/12 bg-white rounded-l-3xl">
       <div class="w-16 mx-auto mt-12 mb-20 p-4 bg-indigo-600 rounded-2xl text-white">
@@ -216,6 +230,12 @@
       </section>
     </section>
   </main>
+
+     
+  <canvas id="chart-mixed-example"></canvas>
+  
+
+
 </template>
 
 <script>
