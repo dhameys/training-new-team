@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white w-full">
         <div class="bg-[#64C5B1] h-32 pt-5 pl-5 text-xl text-white font-mono">
-            <h2>Dashboard</h2>
+            <h2>checkout</h2>
             <p class="text-sm font-thin grid grid-cols-2 absolute">
                 salessa
                 <span
