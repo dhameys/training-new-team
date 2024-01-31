@@ -1,6 +1,6 @@
 <template>
    <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com --> 
-<div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
+<div class="container mx-auto px-5 py-2 lg:px-32  lg:pt-24 hover:animate-spin ">
     <div class="-m-1 flex flex-wrap md:-m-2">
       <div class="flex w-1/2 flex-wrap">
         <div class="w-1/2 p-1 md:p-2" lg:scroll-smooth md:scroll-auto>
@@ -45,7 +45,7 @@
     </div>
   </div>
   <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com --> 
-<div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
+<div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-24 hover:animate-spin">
     <div class="-m-1 flex flex-wrap md:-m-2">
       <div class="flex w-1/2 flex-wrap">
         <div class="w-1/2 p-1 md:p-2">
